@@ -1,0 +1,1479 @@
+ERROR:root:Error requesting while main scraping https://www.9unicorns: net::ERR_NAME_NOT_RESOLVED at https://www.9unicorns/
+=========================== logs ===========================
+navigating to "https://www.9unicorns/", waiting until "load"
+============================================================
+ERROR:root:Error launching browser while main scraping: net::ERR_NAME_NOT_RESOLVED at https://www.9unicorns/
+=========================== logs ===========================
+navigating to "https://www.9unicorns/", waiting until "load"
+============================================================
+ERROR:root:Error requesting while main scraping https://www.9unicorns: net::ERR_NAME_NOT_RESOLVED at https://www.9unicorns/
+=========================== logs ===========================
+navigating to "https://www.9unicorns/", waiting until "load"
+============================================================
+ERROR:root:Error launching browser while main scraping: net::ERR_NAME_NOT_RESOLVED at https://www.9unicorns/
+=========================== logs ===========================
+navigating to "https://www.9unicorns/", waiting until "load"
+============================================================
+ERROR:root:Error requesting while main scraping https://www.9unicorns: net::ERR_NAME_NOT_RESOLVED at https://www.9unicorns/
+=========================== logs ===========================
+navigating to "https://www.9unicorns/", waiting until "load"
+============================================================
+ERROR:root:Error launching browser while main scraping: net::ERR_NAME_NOT_RESOLVED at https://www.9unicorns/
+=========================== logs ===========================
+navigating to "https://www.9unicorns/", waiting until "load"
+============================================================
+ERROR:root:Error requesting while main scraping https://www.9unicorns: net::ERR_NAME_NOT_RESOLVED at https://www.9unicorns/
+=========================== logs ===========================
+navigating to "https://www.9unicorns/", waiting until "load"
+============================================================
+ERROR:root:Error launching browser while main scraping: net::ERR_NAME_NOT_RESOLVED at https://www.9unicorns/
+=========================== logs ===========================
+navigating to "https://www.9unicorns/", waiting until "load"
+============================================================
+ERROR:root:Error requesting while main scraping https://www.9unicorns: net::ERR_NAME_NOT_RESOLVED at https://www.9unicorns/
+=========================== logs ===========================
+navigating to "https://www.9unicorns/", waiting until "load"
+============================================================
+ERROR:root:Error launching browser while main scraping: net::ERR_NAME_NOT_RESOLVED at https://www.9unicorns/
+=========================== logs ===========================
+navigating to "https://www.9unicorns/", waiting until "load"
+============================================================
+INFO:root:Visited url:https://www.9unicorns.in
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:Visited url:https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:Visited url:https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:Visited url:https://www.9unicorns.in/portfolio.html
+INFO:root:BEFORE ABS url: https://wenetwork.co.in/
+INFO:root:ABS url: https://wenetwork.co.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:Visited url:https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub11
+INFO:root:ABS url: https://www.9unicorns.in#sub11
+INFO:root:Visited url:https://www.9unicorns.in#sub11
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub12
+INFO:root:ABS url: https://www.9unicorns.in#sub12
+INFO:root:Visited url:https://www.9unicorns.in#sub12
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub13
+INFO:root:ABS url: https://www.9unicorns.in#sub13
+INFO:root:Visited url:https://www.9unicorns.in#sub13
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub14
+INFO:root:ABS url: https://www.9unicorns.in#sub14
+INFO:root:Visited url:https://www.9unicorns.in#sub14
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub15
+INFO:root:ABS url: https://www.9unicorns.in#sub15
+INFO:root:Visited url:https://www.9unicorns.in#sub15
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub16
+INFO:root:ABS url: https://www.9unicorns.in#sub16
+INFO:root:Visited url:https://www.9unicorns.in#sub16
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub21
+INFO:root:ABS url: https://www.9unicorns.in#sub21
+INFO:root:Visited url:https://www.9unicorns.in#sub21
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub22
+INFO:root:ABS url: https://www.9unicorns.in#sub22
+INFO:root:Visited url:https://www.9unicorns.in#sub22
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediapop
+INFO:root:ABS url: https://www.9unicorns.in#mediapop
+INFO:root:Visited url:https://www.9unicorns.in#mediapop
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediauni
+INFO:root:ABS url: https://www.9unicorns.in#mediauni
+INFO:root:Visited url:https://www.9unicorns.in#mediauni
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:BEFORE ABS url: https://twitter.com/9UnicornsVC
+INFO:root:ABS url: https://twitter.com/9UnicornsVC
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+INFO:root:Visited url:https://www.9unicorns.in
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:Visited url:https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:Visited url:https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:Visited url:https://www.9unicorns.in/portfolio.html
+INFO:root:BEFORE ABS url: https://wenetwork.co.in/
+INFO:root:ABS url: https://wenetwork.co.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:Visited url:https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub11
+INFO:root:ABS url: https://www.9unicorns.in#sub11
+INFO:root:Visited url:https://www.9unicorns.in#sub11
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub12
+INFO:root:ABS url: https://www.9unicorns.in#sub12
+INFO:root:Visited url:https://www.9unicorns.in#sub12
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub13
+INFO:root:ABS url: https://www.9unicorns.in#sub13
+INFO:root:Visited url:https://www.9unicorns.in#sub13
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub14
+INFO:root:ABS url: https://www.9unicorns.in#sub14
+INFO:root:Visited url:https://www.9unicorns.in#sub14
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub15
+INFO:root:ABS url: https://www.9unicorns.in#sub15
+INFO:root:Visited url:https://www.9unicorns.in#sub15
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub16
+INFO:root:ABS url: https://www.9unicorns.in#sub16
+INFO:root:Visited url:https://www.9unicorns.in#sub16
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub21
+INFO:root:ABS url: https://www.9unicorns.in#sub21
+INFO:root:Visited url:https://www.9unicorns.in#sub21
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub22
+INFO:root:ABS url: https://www.9unicorns.in#sub22
+INFO:root:Visited url:https://www.9unicorns.in#sub22
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediapop
+INFO:root:ABS url: https://www.9unicorns.in#mediapop
+INFO:root:Visited url:https://www.9unicorns.in#mediapop
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediauni
+INFO:root:ABS url: https://www.9unicorns.in#mediauni
+INFO:root:Visited url:https://www.9unicorns.in#mediauni
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:BEFORE ABS url: https://twitter.com/9UnicornsVC
+INFO:root:ABS url: https://twitter.com/9UnicornsVC
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+INFO:root:Visited url:https://www.9unicorns.in
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:Visited url:https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:Visited url:https://www.9unicorns.in
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:Visited url:https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:Visited url:https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:Visited url:https://www.9unicorns.in/portfolio.html
+INFO:root:BEFORE ABS url: https://wenetwork.co.in/
+INFO:root:ABS url: https://wenetwork.co.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:Visited url:https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub11
+INFO:root:ABS url: https://www.9unicorns.in#sub11
+INFO:root:Visited url:https://www.9unicorns.in#sub11
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub12
+INFO:root:ABS url: https://www.9unicorns.in#sub12
+INFO:root:Visited url:https://www.9unicorns.in#sub12
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub13
+INFO:root:ABS url: https://www.9unicorns.in#sub13
+INFO:root:Visited url:https://www.9unicorns.in#sub13
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub14
+INFO:root:ABS url: https://www.9unicorns.in#sub14
+INFO:root:Visited url:https://www.9unicorns.in#sub14
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub15
+INFO:root:ABS url: https://www.9unicorns.in#sub15
+INFO:root:Visited url:https://www.9unicorns.in#sub15
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub16
+INFO:root:ABS url: https://www.9unicorns.in#sub16
+INFO:root:Visited url:https://www.9unicorns.in#sub16
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub21
+INFO:root:ABS url: https://www.9unicorns.in#sub21
+INFO:root:Visited url:https://www.9unicorns.in#sub21
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub22
+INFO:root:ABS url: https://www.9unicorns.in#sub22
+INFO:root:Visited url:https://www.9unicorns.in#sub22
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediapop
+INFO:root:ABS url: https://www.9unicorns.in#mediapop
+INFO:root:Visited url:https://www.9unicorns.in#mediapop
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediauni
+INFO:root:ABS url: https://www.9unicorns.in#mediauni
+INFO:root:Visited url:https://www.9unicorns.in#mediauni
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:BEFORE ABS url: https://twitter.com/9UnicornsVC
+INFO:root:ABS url: https://twitter.com/9UnicornsVC
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+INFO:root:Visited url:https://www.9unicorns.in
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:Visited url:https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:Visited url:https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:Visited url:https://www.9unicorns.in/portfolio.html
+INFO:root:BEFORE ABS url: https://wenetwork.co.in/
+INFO:root:ABS url: https://wenetwork.co.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:Visited url:https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub11
+INFO:root:ABS url: https://www.9unicorns.in#sub11
+INFO:root:Visited url:https://www.9unicorns.in#sub11
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub12
+INFO:root:ABS url: https://www.9unicorns.in#sub12
+INFO:root:Visited url:https://www.9unicorns.in#sub12
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub13
+INFO:root:ABS url: https://www.9unicorns.in#sub13
+INFO:root:Visited url:https://www.9unicorns.in#sub13
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub14
+INFO:root:ABS url: https://www.9unicorns.in#sub14
+INFO:root:Visited url:https://www.9unicorns.in#sub14
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub15
+INFO:root:ABS url: https://www.9unicorns.in#sub15
+INFO:root:Visited url:https://www.9unicorns.in#sub15
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub16
+INFO:root:ABS url: https://www.9unicorns.in#sub16
+INFO:root:Visited url:https://www.9unicorns.in#sub16
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub21
+INFO:root:ABS url: https://www.9unicorns.in#sub21
+INFO:root:Visited url:https://www.9unicorns.in#sub21
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub22
+INFO:root:ABS url: https://www.9unicorns.in#sub22
+INFO:root:Visited url:https://www.9unicorns.in#sub22
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediapop
+INFO:root:ABS url: https://www.9unicorns.in#mediapop
+INFO:root:Visited url:https://www.9unicorns.in#mediapop
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediauni
+INFO:root:ABS url: https://www.9unicorns.in#mediauni
+INFO:root:Visited url:https://www.9unicorns.in#mediauni
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:BEFORE ABS url: https://twitter.com/9UnicornsVC
+INFO:root:ABS url: https://twitter.com/9UnicornsVC
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+INFO:openai:error_code=context_length_exceeded error_message="This model's maximum context length is 4097 tokens. However, your messages resulted in 4546 tokens. Please reduce the length of the messages." error_param=messages error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+INFO:root:Visited url:https://www.9unicorns.in
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:Visited url:https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:Visited url:https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:Visited url:https://www.9unicorns.in/portfolio.html
+INFO:root:BEFORE ABS url: https://wenetwork.co.in/
+INFO:root:ABS url: https://wenetwork.co.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:Visited url:https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub11
+INFO:root:ABS url: https://www.9unicorns.in#sub11
+INFO:root:Visited url:https://www.9unicorns.in#sub11
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub12
+INFO:root:ABS url: https://www.9unicorns.in#sub12
+INFO:root:Visited url:https://www.9unicorns.in#sub12
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub13
+INFO:root:ABS url: https://www.9unicorns.in#sub13
+INFO:root:Visited url:https://www.9unicorns.in#sub13
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub14
+INFO:root:ABS url: https://www.9unicorns.in#sub14
+INFO:root:Visited url:https://www.9unicorns.in#sub14
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub15
+INFO:root:ABS url: https://www.9unicorns.in#sub15
+INFO:root:Visited url:https://www.9unicorns.in#sub15
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub16
+INFO:root:ABS url: https://www.9unicorns.in#sub16
+INFO:root:Visited url:https://www.9unicorns.in#sub16
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub21
+INFO:root:ABS url: https://www.9unicorns.in#sub21
+INFO:root:Visited url:https://www.9unicorns.in#sub21
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub22
+INFO:root:ABS url: https://www.9unicorns.in#sub22
+INFO:root:Visited url:https://www.9unicorns.in#sub22
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediapop
+INFO:root:ABS url: https://www.9unicorns.in#mediapop
+INFO:root:Visited url:https://www.9unicorns.in#mediapop
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediauni
+INFO:root:ABS url: https://www.9unicorns.in#mediauni
+INFO:root:Visited url:https://www.9unicorns.in#mediauni
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:BEFORE ABS url: https://twitter.com/9UnicornsVC
+INFO:root:ABS url: https://twitter.com/9UnicornsVC
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+INFO:openai:error_code=context_length_exceeded error_message="This model's maximum context length is 4097 tokens. However, your messages resulted in 4528 tokens. Please reduce the length of the messages." error_param=messages error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+INFO:root:Visited url:https://www.9unicorns.in
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:Visited url:https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:Visited url:https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:Visited url:https://www.9unicorns.in/portfolio.html
+INFO:root:BEFORE ABS url: https://wenetwork.co.in/
+INFO:root:ABS url: https://wenetwork.co.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:Visited url:https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub11
+INFO:root:ABS url: https://www.9unicorns.in#sub11
+INFO:root:Visited url:https://www.9unicorns.in#sub11
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub12
+INFO:root:ABS url: https://www.9unicorns.in#sub12
+INFO:root:Visited url:https://www.9unicorns.in#sub12
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub13
+INFO:root:ABS url: https://www.9unicorns.in#sub13
+INFO:root:Visited url:https://www.9unicorns.in#sub13
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub14
+INFO:root:ABS url: https://www.9unicorns.in#sub14
+INFO:root:Visited url:https://www.9unicorns.in#sub14
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub15
+INFO:root:ABS url: https://www.9unicorns.in#sub15
+INFO:root:Visited url:https://www.9unicorns.in#sub15
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub16
+INFO:root:ABS url: https://www.9unicorns.in#sub16
+INFO:root:Visited url:https://www.9unicorns.in#sub16
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub21
+INFO:root:ABS url: https://www.9unicorns.in#sub21
+INFO:root:Visited url:https://www.9unicorns.in#sub21
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub22
+INFO:root:ABS url: https://www.9unicorns.in#sub22
+INFO:root:Visited url:https://www.9unicorns.in#sub22
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediapop
+INFO:root:ABS url: https://www.9unicorns.in#mediapop
+INFO:root:Visited url:https://www.9unicorns.in#mediapop
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediauni
+INFO:root:ABS url: https://www.9unicorns.in#mediauni
+INFO:root:Visited url:https://www.9unicorns.in#mediauni
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:BEFORE ABS url: https://twitter.com/9UnicornsVC
+INFO:root:ABS url: https://twitter.com/9UnicornsVC
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+INFO:openai:error_code=context_length_exceeded error_message="This model's maximum context length is 4097 tokens. However, your messages resulted in 4501 tokens. Please reduce the length of the messages." error_param=messages error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+INFO:root:Visited url:https://www.9unicorns.in
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:Visited url:https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:Visited url:https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:Visited url:https://www.9unicorns.in/portfolio.html
+INFO:root:BEFORE ABS url: https://wenetwork.co.in/
+INFO:root:ABS url: https://wenetwork.co.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:Visited url:https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub11
+INFO:root:ABS url: https://www.9unicorns.in#sub11
+INFO:root:Visited url:https://www.9unicorns.in#sub11
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub12
+INFO:root:ABS url: https://www.9unicorns.in#sub12
+INFO:root:Visited url:https://www.9unicorns.in#sub12
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub13
+INFO:root:ABS url: https://www.9unicorns.in#sub13
+INFO:root:Visited url:https://www.9unicorns.in#sub13
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub14
+INFO:root:ABS url: https://www.9unicorns.in#sub14
+INFO:root:Visited url:https://www.9unicorns.in#sub14
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub15
+INFO:root:ABS url: https://www.9unicorns.in#sub15
+INFO:root:Visited url:https://www.9unicorns.in#sub15
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub16
+INFO:root:ABS url: https://www.9unicorns.in#sub16
+INFO:root:Visited url:https://www.9unicorns.in#sub16
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub21
+INFO:root:ABS url: https://www.9unicorns.in#sub21
+INFO:root:Visited url:https://www.9unicorns.in#sub21
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub22
+INFO:root:ABS url: https://www.9unicorns.in#sub22
+INFO:root:Visited url:https://www.9unicorns.in#sub22
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediapop
+INFO:root:ABS url: https://www.9unicorns.in#mediapop
+INFO:root:Visited url:https://www.9unicorns.in#mediapop
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediauni
+INFO:root:ABS url: https://www.9unicorns.in#mediauni
+INFO:root:Visited url:https://www.9unicorns.in#mediauni
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:BEFORE ABS url: https://twitter.com/9UnicornsVC
+INFO:root:ABS url: https://twitter.com/9UnicornsVC
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+INFO:root:Visited url:https://www.9unicorns.in
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:Visited url:https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:Visited url:https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:Visited url:https://www.9unicorns.in/portfolio.html
+INFO:root:BEFORE ABS url: https://wenetwork.co.in/
+INFO:root:ABS url: https://wenetwork.co.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:Visited url:https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub11
+INFO:root:ABS url: https://www.9unicorns.in#sub11
+INFO:root:Visited url:https://www.9unicorns.in#sub11
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub12
+INFO:root:ABS url: https://www.9unicorns.in#sub12
+INFO:root:Visited url:https://www.9unicorns.in#sub12
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub13
+INFO:root:ABS url: https://www.9unicorns.in#sub13
+INFO:root:Visited url:https://www.9unicorns.in#sub13
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub14
+INFO:root:ABS url: https://www.9unicorns.in#sub14
+INFO:root:Visited url:https://www.9unicorns.in#sub14
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub15
+INFO:root:ABS url: https://www.9unicorns.in#sub15
+INFO:root:Visited url:https://www.9unicorns.in#sub15
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub16
+INFO:root:ABS url: https://www.9unicorns.in#sub16
+INFO:root:Visited url:https://www.9unicorns.in#sub16
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub21
+INFO:root:ABS url: https://www.9unicorns.in#sub21
+INFO:root:Visited url:https://www.9unicorns.in#sub21
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub22
+INFO:root:ABS url: https://www.9unicorns.in#sub22
+INFO:root:Visited url:https://www.9unicorns.in#sub22
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediapop
+INFO:root:ABS url: https://www.9unicorns.in#mediapop
+INFO:root:Visited url:https://www.9unicorns.in#mediapop
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediauni
+INFO:root:ABS url: https://www.9unicorns.in#mediauni
+INFO:root:Visited url:https://www.9unicorns.in#mediauni
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:BEFORE ABS url: https://twitter.com/9UnicornsVC
+INFO:root:ABS url: https://twitter.com/9UnicornsVC
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+INFO:openai:error_code=context_length_exceeded error_message="This model's maximum context length is 4097 tokens. However, your messages resulted in 4492 tokens. Please reduce the length of the messages." error_param=messages error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+INFO:root:Visited url:https://www.9unicorns.in
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:Visited url:https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:Visited url:https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:Visited url:https://www.9unicorns.in/portfolio.html
+INFO:root:BEFORE ABS url: https://wenetwork.co.in/
+INFO:root:ABS url: https://wenetwork.co.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:Visited url:https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub11
+INFO:root:ABS url: https://www.9unicorns.in#sub11
+INFO:root:Visited url:https://www.9unicorns.in#sub11
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub12
+INFO:root:ABS url: https://www.9unicorns.in#sub12
+INFO:root:Visited url:https://www.9unicorns.in#sub12
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub13
+INFO:root:ABS url: https://www.9unicorns.in#sub13
+INFO:root:Visited url:https://www.9unicorns.in#sub13
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub14
+INFO:root:ABS url: https://www.9unicorns.in#sub14
+INFO:root:Visited url:https://www.9unicorns.in#sub14
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub15
+INFO:root:ABS url: https://www.9unicorns.in#sub15
+INFO:root:Visited url:https://www.9unicorns.in#sub15
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub16
+INFO:root:ABS url: https://www.9unicorns.in#sub16
+INFO:root:Visited url:https://www.9unicorns.in#sub16
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub21
+INFO:root:ABS url: https://www.9unicorns.in#sub21
+INFO:root:Visited url:https://www.9unicorns.in#sub21
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub22
+INFO:root:ABS url: https://www.9unicorns.in#sub22
+INFO:root:Visited url:https://www.9unicorns.in#sub22
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediapop
+INFO:root:ABS url: https://www.9unicorns.in#mediapop
+INFO:root:Visited url:https://www.9unicorns.in#mediapop
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediauni
+INFO:root:ABS url: https://www.9unicorns.in#mediauni
+INFO:root:Visited url:https://www.9unicorns.in#mediauni
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:BEFORE ABS url: https://twitter.com/9UnicornsVC
+INFO:root:ABS url: https://twitter.com/9UnicornsVC
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+INFO:root:Visited url:https://www.9unicorns.in
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:Visited url:https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:Visited url:https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:Visited url:https://www.9unicorns.in/portfolio.html
+INFO:root:BEFORE ABS url: https://wenetwork.co.in/
+INFO:root:ABS url: https://wenetwork.co.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:Visited url:https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub11
+INFO:root:ABS url: https://www.9unicorns.in#sub11
+INFO:root:Visited url:https://www.9unicorns.in#sub11
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub12
+INFO:root:ABS url: https://www.9unicorns.in#sub12
+INFO:root:Visited url:https://www.9unicorns.in#sub12
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub13
+INFO:root:ABS url: https://www.9unicorns.in#sub13
+INFO:root:Visited url:https://www.9unicorns.in#sub13
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub14
+INFO:root:ABS url: https://www.9unicorns.in#sub14
+INFO:root:Visited url:https://www.9unicorns.in#sub14
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub15
+INFO:root:ABS url: https://www.9unicorns.in#sub15
+INFO:root:Visited url:https://www.9unicorns.in#sub15
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub16
+INFO:root:ABS url: https://www.9unicorns.in#sub16
+INFO:root:Visited url:https://www.9unicorns.in#sub16
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub21
+INFO:root:ABS url: https://www.9unicorns.in#sub21
+INFO:root:Visited url:https://www.9unicorns.in#sub21
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub22
+INFO:root:ABS url: https://www.9unicorns.in#sub22
+INFO:root:Visited url:https://www.9unicorns.in#sub22
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediapop
+INFO:root:ABS url: https://www.9unicorns.in#mediapop
+INFO:root:Visited url:https://www.9unicorns.in#mediapop
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediauni
+INFO:root:ABS url: https://www.9unicorns.in#mediauni
+INFO:root:Visited url:https://www.9unicorns.in#mediauni
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:BEFORE ABS url: https://twitter.com/9UnicornsVC
+INFO:root:ABS url: https://twitter.com/9UnicornsVC
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+INFO:root:Visited url:https://www.9unicorns.in
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:Visited url:https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:Visited url:https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:Visited url:https://www.9unicorns.in/portfolio.html
+INFO:root:BEFORE ABS url: https://wenetwork.co.in/
+INFO:root:ABS url: https://wenetwork.co.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:Visited url:https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub11
+INFO:root:ABS url: https://www.9unicorns.in#sub11
+INFO:root:Visited url:https://www.9unicorns.in#sub11
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub12
+INFO:root:ABS url: https://www.9unicorns.in#sub12
+INFO:root:Visited url:https://www.9unicorns.in#sub12
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub13
+INFO:root:ABS url: https://www.9unicorns.in#sub13
+INFO:root:Visited url:https://www.9unicorns.in#sub13
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub14
+INFO:root:ABS url: https://www.9unicorns.in#sub14
+INFO:root:Visited url:https://www.9unicorns.in#sub14
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub15
+INFO:root:ABS url: https://www.9unicorns.in#sub15
+INFO:root:Visited url:https://www.9unicorns.in#sub15
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub16
+INFO:root:ABS url: https://www.9unicorns.in#sub16
+INFO:root:Visited url:https://www.9unicorns.in#sub16
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub21
+INFO:root:ABS url: https://www.9unicorns.in#sub21
+INFO:root:Visited url:https://www.9unicorns.in#sub21
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub22
+INFO:root:ABS url: https://www.9unicorns.in#sub22
+INFO:root:Visited url:https://www.9unicorns.in#sub22
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediapop
+INFO:root:ABS url: https://www.9unicorns.in#mediapop
+INFO:root:Visited url:https://www.9unicorns.in#mediapop
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediauni
+INFO:root:ABS url: https://www.9unicorns.in#mediauni
+INFO:root:Visited url:https://www.9unicorns.in#mediauni
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:BEFORE ABS url: https://twitter.com/9UnicornsVC
+INFO:root:ABS url: https://twitter.com/9UnicornsVC
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+INFO:root:Visited url:https://www.9unicorns.in
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:Visited url:https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:Visited url:https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:Visited url:https://www.9unicorns.in/portfolio.html
+INFO:root:BEFORE ABS url: https://wenetwork.co.in/
+INFO:root:ABS url: https://wenetwork.co.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:Visited url:https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub11
+INFO:root:ABS url: https://www.9unicorns.in#sub11
+INFO:root:Visited url:https://www.9unicorns.in#sub11
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub12
+INFO:root:ABS url: https://www.9unicorns.in#sub12
+INFO:root:Visited url:https://www.9unicorns.in#sub12
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub13
+INFO:root:ABS url: https://www.9unicorns.in#sub13
+INFO:root:Visited url:https://www.9unicorns.in#sub13
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub14
+INFO:root:ABS url: https://www.9unicorns.in#sub14
+INFO:root:Visited url:https://www.9unicorns.in#sub14
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub15
+INFO:root:ABS url: https://www.9unicorns.in#sub15
+INFO:root:Visited url:https://www.9unicorns.in#sub15
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub16
+INFO:root:ABS url: https://www.9unicorns.in#sub16
+INFO:root:Visited url:https://www.9unicorns.in#sub16
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub21
+INFO:root:ABS url: https://www.9unicorns.in#sub21
+INFO:root:Visited url:https://www.9unicorns.in#sub21
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub22
+INFO:root:ABS url: https://www.9unicorns.in#sub22
+INFO:root:Visited url:https://www.9unicorns.in#sub22
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediapop
+INFO:root:ABS url: https://www.9unicorns.in#mediapop
+INFO:root:Visited url:https://www.9unicorns.in#mediapop
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediauni
+INFO:root:ABS url: https://www.9unicorns.in#mediauni
+INFO:root:Visited url:https://www.9unicorns.in#mediauni
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:BEFORE ABS url: https://twitter.com/9UnicornsVC
+INFO:root:ABS url: https://twitter.com/9UnicornsVC
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+INFO:root:Visited url:https://www.9unicorns.in
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:Visited url:https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:Visited url:https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:Visited url:https://www.9unicorns.in/portfolio.html
+INFO:root:BEFORE ABS url: https://wenetwork.co.in/
+INFO:root:ABS url: https://wenetwork.co.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:Visited url:https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub11
+INFO:root:ABS url: https://www.9unicorns.in#sub11
+INFO:root:Visited url:https://www.9unicorns.in#sub11
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub12
+INFO:root:ABS url: https://www.9unicorns.in#sub12
+INFO:root:Visited url:https://www.9unicorns.in#sub12
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub13
+INFO:root:ABS url: https://www.9unicorns.in#sub13
+INFO:root:Visited url:https://www.9unicorns.in#sub13
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub14
+INFO:root:ABS url: https://www.9unicorns.in#sub14
+INFO:root:Visited url:https://www.9unicorns.in#sub14
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub15
+INFO:root:ABS url: https://www.9unicorns.in#sub15
+INFO:root:Visited url:https://www.9unicorns.in#sub15
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub16
+INFO:root:ABS url: https://www.9unicorns.in#sub16
+INFO:root:Visited url:https://www.9unicorns.in#sub16
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub21
+INFO:root:ABS url: https://www.9unicorns.in#sub21
+INFO:root:Visited url:https://www.9unicorns.in#sub21
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub22
+INFO:root:ABS url: https://www.9unicorns.in#sub22
+INFO:root:Visited url:https://www.9unicorns.in#sub22
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediapop
+INFO:root:ABS url: https://www.9unicorns.in#mediapop
+INFO:root:Visited url:https://www.9unicorns.in#mediapop
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediauni
+INFO:root:ABS url: https://www.9unicorns.in#mediauni
+INFO:root:Visited url:https://www.9unicorns.in#mediauni
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:BEFORE ABS url: https://twitter.com/9UnicornsVC
+INFO:root:ABS url: https://twitter.com/9UnicornsVC
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+INFO:openai:error_code=context_length_exceeded error_message="This model's maximum context length is 4097 tokens. However, your messages resulted in 4492 tokens. Please reduce the length of the messages." error_param=messages error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+INFO:root:Visited url:https://www.9unicorns.in
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:Visited url:https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:Visited url:https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:Visited url:https://www.9unicorns.in/portfolio.html
+INFO:root:BEFORE ABS url: https://wenetwork.co.in/
+INFO:root:ABS url: https://wenetwork.co.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:Visited url:https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub11
+INFO:root:ABS url: https://www.9unicorns.in#sub11
+INFO:root:Visited url:https://www.9unicorns.in#sub11
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub12
+INFO:root:ABS url: https://www.9unicorns.in#sub12
+INFO:root:Visited url:https://www.9unicorns.in#sub12
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub13
+INFO:root:ABS url: https://www.9unicorns.in#sub13
+INFO:root:Visited url:https://www.9unicorns.in#sub13
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub14
+INFO:root:ABS url: https://www.9unicorns.in#sub14
+INFO:root:Visited url:https://www.9unicorns.in#sub14
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub15
+INFO:root:ABS url: https://www.9unicorns.in#sub15
+INFO:root:Visited url:https://www.9unicorns.in#sub15
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub16
+INFO:root:ABS url: https://www.9unicorns.in#sub16
+INFO:root:Visited url:https://www.9unicorns.in#sub16
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub21
+INFO:root:ABS url: https://www.9unicorns.in#sub21
+INFO:root:Visited url:https://www.9unicorns.in#sub21
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub22
+INFO:root:ABS url: https://www.9unicorns.in#sub22
+INFO:root:Visited url:https://www.9unicorns.in#sub22
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediapop
+INFO:root:ABS url: https://www.9unicorns.in#mediapop
+INFO:root:Visited url:https://www.9unicorns.in#mediapop
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediauni
+INFO:root:ABS url: https://www.9unicorns.in#mediauni
+INFO:root:Visited url:https://www.9unicorns.in#mediauni
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:BEFORE ABS url: https://twitter.com/9UnicornsVC
+INFO:root:ABS url: https://twitter.com/9UnicornsVC
+INFO:root:Visited url:https://www.9unicorns.in
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:Visited url:https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:Visited url:https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:Visited url:https://www.9unicorns.in/portfolio.html
+INFO:root:BEFORE ABS url: https://wenetwork.co.in/
+INFO:root:ABS url: https://wenetwork.co.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:Visited url:https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub11
+INFO:root:ABS url: https://www.9unicorns.in#sub11
+INFO:root:Visited url:https://www.9unicorns.in#sub11
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub12
+INFO:root:ABS url: https://www.9unicorns.in#sub12
+INFO:root:Visited url:https://www.9unicorns.in#sub12
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub13
+INFO:root:ABS url: https://www.9unicorns.in#sub13
+INFO:root:Visited url:https://www.9unicorns.in#sub13
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub14
+INFO:root:ABS url: https://www.9unicorns.in#sub14
+INFO:root:Visited url:https://www.9unicorns.in#sub14
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub15
+INFO:root:ABS url: https://www.9unicorns.in#sub15
+INFO:root:Visited url:https://www.9unicorns.in#sub15
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub16
+INFO:root:ABS url: https://www.9unicorns.in#sub16
+INFO:root:Visited url:https://www.9unicorns.in#sub16
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub21
+INFO:root:ABS url: https://www.9unicorns.in#sub21
+INFO:root:Visited url:https://www.9unicorns.in#sub21
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub22
+INFO:root:ABS url: https://www.9unicorns.in#sub22
+INFO:root:Visited url:https://www.9unicorns.in#sub22
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediapop
+INFO:root:ABS url: https://www.9unicorns.in#mediapop
+INFO:root:Visited url:https://www.9unicorns.in#mediapop
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediauni
+INFO:root:ABS url: https://www.9unicorns.in#mediauni
+INFO:root:Visited url:https://www.9unicorns.in#mediauni
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:BEFORE ABS url: https://twitter.com/9UnicornsVC
+INFO:root:ABS url: https://twitter.com/9UnicornsVC
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+INFO:root:Visited url:https://www.9unicorns.in
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:Visited url:https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:Visited url:https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:Visited url:https://www.9unicorns.in/portfolio.html
+INFO:root:BEFORE ABS url: https://wenetwork.co.in/
+INFO:root:ABS url: https://wenetwork.co.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:Visited url:https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub11
+INFO:root:ABS url: https://www.9unicorns.in#sub11
+INFO:root:Visited url:https://www.9unicorns.in#sub11
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub12
+INFO:root:ABS url: https://www.9unicorns.in#sub12
+INFO:root:Visited url:https://www.9unicorns.in#sub12
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub13
+INFO:root:ABS url: https://www.9unicorns.in#sub13
+INFO:root:Visited url:https://www.9unicorns.in#sub13
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub14
+INFO:root:ABS url: https://www.9unicorns.in#sub14
+INFO:root:Visited url:https://www.9unicorns.in#sub14
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub15
+INFO:root:ABS url: https://www.9unicorns.in#sub15
+INFO:root:Visited url:https://www.9unicorns.in#sub15
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub16
+INFO:root:ABS url: https://www.9unicorns.in#sub16
+INFO:root:Visited url:https://www.9unicorns.in#sub16
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub21
+INFO:root:ABS url: https://www.9unicorns.in#sub21
+INFO:root:Visited url:https://www.9unicorns.in#sub21
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub22
+INFO:root:ABS url: https://www.9unicorns.in#sub22
+INFO:root:Visited url:https://www.9unicorns.in#sub22
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediapop
+INFO:root:ABS url: https://www.9unicorns.in#mediapop
+INFO:root:Visited url:https://www.9unicorns.in#mediapop
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediauni
+INFO:root:ABS url: https://www.9unicorns.in#mediauni
+INFO:root:Visited url:https://www.9unicorns.in#mediauni
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:BEFORE ABS url: https://twitter.com/9UnicornsVC
+INFO:root:ABS url: https://twitter.com/9UnicornsVC
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+INFO:root:Visited url:https://www.9unicorns.in
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:Visited url:https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:Visited url:https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:Visited url:https://www.9unicorns.in/portfolio.html
+INFO:root:BEFORE ABS url: https://wenetwork.co.in/
+INFO:root:ABS url: https://wenetwork.co.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:Visited url:https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub11
+INFO:root:ABS url: https://www.9unicorns.in#sub11
+INFO:root:Visited url:https://www.9unicorns.in#sub11
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub12
+INFO:root:ABS url: https://www.9unicorns.in#sub12
+INFO:root:Visited url:https://www.9unicorns.in#sub12
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub13
+INFO:root:ABS url: https://www.9unicorns.in#sub13
+INFO:root:Visited url:https://www.9unicorns.in#sub13
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub14
+INFO:root:ABS url: https://www.9unicorns.in#sub14
+INFO:root:Visited url:https://www.9unicorns.in#sub14
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub15
+INFO:root:ABS url: https://www.9unicorns.in#sub15
+INFO:root:Visited url:https://www.9unicorns.in#sub15
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub16
+INFO:root:ABS url: https://www.9unicorns.in#sub16
+INFO:root:Visited url:https://www.9unicorns.in#sub16
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub21
+INFO:root:ABS url: https://www.9unicorns.in#sub21
+INFO:root:Visited url:https://www.9unicorns.in#sub21
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub22
+INFO:root:ABS url: https://www.9unicorns.in#sub22
+INFO:root:Visited url:https://www.9unicorns.in#sub22
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediapop
+INFO:root:ABS url: https://www.9unicorns.in#mediapop
+INFO:root:Visited url:https://www.9unicorns.in#mediapop
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediauni
+INFO:root:ABS url: https://www.9unicorns.in#mediauni
+INFO:root:Visited url:https://www.9unicorns.in#mediauni
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:BEFORE ABS url: https://twitter.com/9UnicornsVC
+INFO:root:ABS url: https://twitter.com/9UnicornsVC
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+INFO:openai:error_code=context_length_exceeded error_message="This model's maximum context length is 4097 tokens. However, your messages resulted in 4498 tokens. Please reduce the length of the messages." error_param=messages error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+INFO:root:Visited url:https://www.9unicorns.in
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:Visited url:https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:Visited url:https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:Visited url:https://www.9unicorns.in/portfolio.html
+INFO:root:BEFORE ABS url: https://wenetwork.co.in/
+INFO:root:ABS url: https://wenetwork.co.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:Visited url:https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub11
+INFO:root:ABS url: https://www.9unicorns.in#sub11
+INFO:root:Visited url:https://www.9unicorns.in#sub11
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub12
+INFO:root:ABS url: https://www.9unicorns.in#sub12
+INFO:root:Visited url:https://www.9unicorns.in#sub12
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub13
+INFO:root:ABS url: https://www.9unicorns.in#sub13
+INFO:root:Visited url:https://www.9unicorns.in#sub13
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub14
+INFO:root:ABS url: https://www.9unicorns.in#sub14
+INFO:root:Visited url:https://www.9unicorns.in#sub14
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub15
+INFO:root:ABS url: https://www.9unicorns.in#sub15
+INFO:root:Visited url:https://www.9unicorns.in#sub15
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub16
+INFO:root:ABS url: https://www.9unicorns.in#sub16
+INFO:root:Visited url:https://www.9unicorns.in#sub16
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub21
+INFO:root:ABS url: https://www.9unicorns.in#sub21
+INFO:root:Visited url:https://www.9unicorns.in#sub21
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub22
+INFO:root:ABS url: https://www.9unicorns.in#sub22
+INFO:root:Visited url:https://www.9unicorns.in#sub22
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediapop
+INFO:root:ABS url: https://www.9unicorns.in#mediapop
+INFO:root:Visited url:https://www.9unicorns.in#mediapop
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediauni
+INFO:root:ABS url: https://www.9unicorns.in#mediauni
+INFO:root:Visited url:https://www.9unicorns.in#mediauni
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:BEFORE ABS url: https://twitter.com/9UnicornsVC
+INFO:root:ABS url: https://twitter.com/9UnicornsVC
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+INFO:openai:error_code=context_length_exceeded error_message="This model's maximum context length is 4097 tokens. However, your messages resulted in 4498 tokens. Please reduce the length of the messages." error_param=messages error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+INFO:root:Visited url:https://www.9unicorns.in
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:Visited url:https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:Visited url:https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:Visited url:https://www.9unicorns.in/portfolio.html
+INFO:root:BEFORE ABS url: https://wenetwork.co.in/
+INFO:root:ABS url: https://wenetwork.co.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:Visited url:https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub11
+INFO:root:ABS url: https://www.9unicorns.in#sub11
+INFO:root:Visited url:https://www.9unicorns.in#sub11
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub12
+INFO:root:ABS url: https://www.9unicorns.in#sub12
+INFO:root:Visited url:https://www.9unicorns.in#sub12
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub13
+INFO:root:ABS url: https://www.9unicorns.in#sub13
+INFO:root:Visited url:https://www.9unicorns.in#sub13
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub14
+INFO:root:ABS url: https://www.9unicorns.in#sub14
+INFO:root:Visited url:https://www.9unicorns.in#sub14
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub15
+INFO:root:ABS url: https://www.9unicorns.in#sub15
+INFO:root:Visited url:https://www.9unicorns.in#sub15
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub16
+INFO:root:ABS url: https://www.9unicorns.in#sub16
+INFO:root:Visited url:https://www.9unicorns.in#sub16
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub21
+INFO:root:ABS url: https://www.9unicorns.in#sub21
+INFO:root:Visited url:https://www.9unicorns.in#sub21
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub22
+INFO:root:ABS url: https://www.9unicorns.in#sub22
+INFO:root:Visited url:https://www.9unicorns.in#sub22
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediapop
+INFO:root:ABS url: https://www.9unicorns.in#mediapop
+INFO:root:Visited url:https://www.9unicorns.in#mediapop
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediauni
+INFO:root:ABS url: https://www.9unicorns.in#mediauni
+INFO:root:Visited url:https://www.9unicorns.in#mediauni
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:BEFORE ABS url: https://twitter.com/9UnicornsVC
+INFO:root:ABS url: https://twitter.com/9UnicornsVC
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+INFO:openai:error_code=context_length_exceeded error_message="This model's maximum context length is 4097 tokens. However, your messages resulted in 4498 tokens. Please reduce the length of the messages." error_param=messages error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+INFO:root:Visited url:https://www.9unicorns.in
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:Visited url:https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:Visited url:https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:Visited url:https://www.9unicorns.in/portfolio.html
+INFO:root:BEFORE ABS url: https://wenetwork.co.in/
+INFO:root:ABS url: https://wenetwork.co.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:Visited url:https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub11
+INFO:root:ABS url: https://www.9unicorns.in#sub11
+INFO:root:Visited url:https://www.9unicorns.in#sub11
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub12
+INFO:root:ABS url: https://www.9unicorns.in#sub12
+INFO:root:Visited url:https://www.9unicorns.in#sub12
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub13
+INFO:root:ABS url: https://www.9unicorns.in#sub13
+INFO:root:Visited url:https://www.9unicorns.in#sub13
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub14
+INFO:root:ABS url: https://www.9unicorns.in#sub14
+INFO:root:Visited url:https://www.9unicorns.in#sub14
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub15
+INFO:root:ABS url: https://www.9unicorns.in#sub15
+INFO:root:Visited url:https://www.9unicorns.in#sub15
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub16
+INFO:root:ABS url: https://www.9unicorns.in#sub16
+INFO:root:Visited url:https://www.9unicorns.in#sub16
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub21
+INFO:root:ABS url: https://www.9unicorns.in#sub21
+INFO:root:Visited url:https://www.9unicorns.in#sub21
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub22
+INFO:root:ABS url: https://www.9unicorns.in#sub22
+INFO:root:Visited url:https://www.9unicorns.in#sub22
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediapop
+INFO:root:ABS url: https://www.9unicorns.in#mediapop
+INFO:root:Visited url:https://www.9unicorns.in#mediapop
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediauni
+INFO:root:ABS url: https://www.9unicorns.in#mediauni
+INFO:root:Visited url:https://www.9unicorns.in#mediauni
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:BEFORE ABS url: https://twitter.com/9UnicornsVC
+INFO:root:ABS url: https://twitter.com/9UnicornsVC
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
+INFO:root:Visited url:https://www.9unicorns.in
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:Visited url:https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:Visited url:https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:Visited url:https://www.9unicorns.in/portfolio.html
+INFO:root:BEFORE ABS url: https://wenetwork.co.in/
+INFO:root:ABS url: https://wenetwork.co.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:Visited url:https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub11
+INFO:root:ABS url: https://www.9unicorns.in#sub11
+INFO:root:Visited url:https://www.9unicorns.in#sub11
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub12
+INFO:root:ABS url: https://www.9unicorns.in#sub12
+INFO:root:Visited url:https://www.9unicorns.in#sub12
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub13
+INFO:root:ABS url: https://www.9unicorns.in#sub13
+INFO:root:Visited url:https://www.9unicorns.in#sub13
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub14
+INFO:root:ABS url: https://www.9unicorns.in#sub14
+INFO:root:Visited url:https://www.9unicorns.in#sub14
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub15
+INFO:root:ABS url: https://www.9unicorns.in#sub15
+INFO:root:Visited url:https://www.9unicorns.in#sub15
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub16
+INFO:root:ABS url: https://www.9unicorns.in#sub16
+INFO:root:Visited url:https://www.9unicorns.in#sub16
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub21
+INFO:root:ABS url: https://www.9unicorns.in#sub21
+INFO:root:Visited url:https://www.9unicorns.in#sub21
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub22
+INFO:root:ABS url: https://www.9unicorns.in#sub22
+INFO:root:Visited url:https://www.9unicorns.in#sub22
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediapop
+INFO:root:ABS url: https://www.9unicorns.in#mediapop
+INFO:root:Visited url:https://www.9unicorns.in#mediapop
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediauni
+INFO:root:ABS url: https://www.9unicorns.in#mediauni
+INFO:root:Visited url:https://www.9unicorns.in#mediauni
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:BEFORE ABS url: https://twitter.com/9UnicornsVC
+INFO:root:ABS url: https://twitter.com/9UnicornsVC
+INFO:faiss.loader:Loading faiss with AVX2 support.
+INFO:faiss.loader:Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+INFO:faiss.loader:Loading faiss.
+INFO:faiss.loader:Successfully loaded faiss.
