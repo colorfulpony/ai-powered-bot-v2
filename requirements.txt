@@ -1,0 +1,16 @@
+urllib3
+cloud-sql-python-connector
+SQLAlchemy
+google-cloud-secret-manager
+selenium
+requests
+beautifulsoup4
+playwright
+langchain
+openai
+regex
+chromadb
+tiktoken
+pymysql
+gspread
+tabulate
