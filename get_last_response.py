@@ -3,7 +3,6 @@ from langchain.vectorstores import Chroma
 from prompts import LAST_ANSWER_PROMPT
 from langchain.llms import OpenAIChat
 from langchain.chains import RetrievalQA
-from langchain.prompts import PromptTemplate
 import openai
 import time
 import random
@@ -68,7 +67,7 @@ def get_last_response(fund_name, startup_info):
     query = f"""NAME OF CERTAIN FUND:
 {fund_name}
 
-INFORMATION ABOUT USER STARTUP:
+USER'S STARTUP INFORMATION:
 {startup_info}"""
 
     # Ask a question and get an answer

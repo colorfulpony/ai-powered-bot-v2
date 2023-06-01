@@ -4,17 +4,21 @@ from clean_text_after_scrape import clean_text
 from vc_website_portfolio_links_v2 import get_portfolio_links
 from get_gpt_response_via_text import gpt_info_via_text
 from get_gpt_response_via_text_for_portfolio_website_solution import gpt_info_via_text as gpt_portfolio_startup_solution
-from insert_into_db import insert_data_into_db
+from insert_into_google_sheets import insert_data_into_google_sheets
 from vc_website_scrape_v2 import scrape_website
 import questions as constants
 import prompts as INPUTS
-from gpt_stuff import repeat_gpt_answer_3_time
+from gpt_repeat_answer_3_times import repeat_gpt_answer_3_time
 from get_info_from_sheets import get_data_from_google_sheets
 from playwright.sync_api import sync_playwright
+from multiprocessing import Pool
+from functools import partial
+from get_all_subpages_links_of_vc import get_vc_subpages_links
 
 
 def get_info_about_vc(vc_name, url, browser) -> tuple:
     try:
+        links = get_vc_subpages_links(url, browser)
         raw_text = scrape_website(url, browser)
         cleaned_text = clean_text(raw_text)
         cleaned_text = f"Info about venture capital with name {vc_name}. \n{cleaned_text}"
@@ -32,16 +36,6 @@ def get_info_about_vc(vc_name, url, browser) -> tuple:
         print(error)
 
 
-def get_text_from_portfolio_company_of_vc(url, browser) -> str:
-    try:
-        raw_text = scrap_portfolio_website(url, browser)
-        if raw_text == "":
-            return "-"
-        return raw_text
-    except Exception as error:
-        print(error)
-
-
 def get_info_about_vc_portfolio_startups(portfolio_url, max_portfolios=10, browser=None) -> list:
     try:
         startups_result_info = []
@@ -49,7 +43,7 @@ def get_info_about_vc_portfolio_startups(portfolio_url, max_portfolios=10, brows
         portfolio_startups_links = get_portfolio_links(portfolio_url, browser)
 
         for portfolio_startup_link in portfolio_startups_links[:max_portfolios]:
-            text_from_startup_website = get_text_from_portfolio_company_of_vc(portfolio_startup_link, browser)
+            text_from_startup_website = scrap_portfolio_website(portfolio_startup_link, browser)
             if text_from_startup_website == "-":
                 continue
 
@@ -70,12 +64,11 @@ def get_info_about_vc_portfolio_startups(portfolio_url, max_portfolios=10, brows
 
 
 def process_vc_data(vc_name, vc_website_url, vc_portfolio_url, vc_linkedin_url, analyst_name, analyst_email, vc_stages, vc_industries, browser) -> tuple:
-    if vc_stages == "" or vc_industries == "":
+    portfolio_startups = get_info_about_vc_portfolio_startups(vc_portfolio_url, browser=browser)
+    if vc_stages == "-" or vc_industries == "-":
         industries, stages = get_info_about_vc(vc_name, vc_website_url, browser)
         vc_industries = f"{vc_industries}, {industries}" if vc_industries else industries
         vc_stages = f"{vc_stages}, {stages}" if vc_stages else stages
-
-    portfolio_startups = get_info_about_vc_portfolio_startups(vc_portfolio_url, browser=browser)
 
     return vc_name, vc_website_url, vc_linkedin_url, analyst_name, analyst_email, vc_stages, vc_industries, portfolio_startups
 
@@ -91,7 +84,7 @@ if __name__ == "__main__":
         for vc_data in data_from_sheets:
             vc_name, vc_website_url, vc_portfolio_url, vc_linkedin_url, analyst_name, analyst_email, vc_stages, vc_industries = vc_data
             processed_data = process_vc_data(vc_name, vc_website_url, vc_portfolio_url, vc_linkedin_url, analyst_name, analyst_email, vc_stages, vc_industries, browser)
-            insert_data_into_db(*processed_data)
+            insert_data_into_google_sheets(*processed_data)
             print(processed_data[-1])  # Print portfolio startups
 
         browser.close()

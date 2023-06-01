@@ -61,10 +61,11 @@ CONTEXT:
     partial_variables={"format_instructions": format_instructions}
 )
 
+
 # get vc names
 MATCHED_VC_NAMES_PROMPT_v2 = PromptTemplate(
     template="""Based on the USER'S STARTUP INFORMATION, find a venture capital funds that is likely to invest in the user's startup among the funds described in CONTEXT
-In response, write a list of the names of these funds separated by commas(at least 3 funds, but all of them should be from CONTENXT)
+In response, write a list of the names of these funds separated by commas(minimum 3 funds(maximum 10), but all of them should be from CONTENXT). Don't make up any data.
 
 USER'S STARTUP INFORMATION:
 {question}
@@ -79,28 +80,22 @@ CONTEXT:
     partial_variables={"format_instructions": format_instructions}
 )
 
-
-
 last_response_output_parser = StructuredOutputParser.from_response_schemas(LAST_RESPONSE_RESPONSE_SCHEMA)
 last_response_format_instructions = last_response_output_parser.get_format_instructions()
 
 # last response
-LAST_ANSWER_PROMPT = PromptTemplate(
-    template="""INFORMATION ABOUT VENTURE FUNDS:
-{context}
-    
-Use only the information provided above to do the task
-    
-You are a very good linkedin connection engineer. At the very beginning of this message, you got INFORMATION ABOUT VENTURE FUNDS.
-Task: Your task is to give answer based on the OUTPUT FORMAT INSTRUCTIONS. 
 
-DON'T MAKE UP ANY INFORMATION and FOR YOU ANSWER USE INFORMATION ONLY THAT I GAVE YOU
-Your answer format should be only in OUTPUT FORMAT INSTRUCTIONS provided below
+LAST_ANSWER_PROMPT = PromptTemplate(
+    template="""Based on the NAME OF CERTAIN FUND, USER'S STARTUP INFORMATION and CONTEXT write answer based on the OUTPUT FORMAT INSTRUCTIONS
+All data in your response should be only from the information provided below. Don't make up any data. 
 
 {question}
 
 OUTPUT FORMAT INSTRUCTIONS:
 {format_instructions}
+
+CONTEXT:
+{context}
 """,
     input_variables=["question", "context"],
     partial_variables={"format_instructions": last_response_format_instructions}

@@ -44,20 +44,20 @@ DELETE_URL_THAT_STARTS_WITH = (
 )
 
 
-def load_user_agents():
-    try:
-        with open("user-agents.txt", 'r') as file:
-            return file.read().splitlines()
-    except FileNotFoundError:
-        print("user-agents.txt file not found.")
-        return []
-
-
-user_agents = load_user_agents()
+# def load_user_agents():
+#     try:
+#         with open("user-agents.txt", 'r') as file:
+#             return file.read().splitlines()
+#     except FileNotFoundError:
+#         print("user-agents.txt file not found.")
+#         return []
+#
+#
+# user_agents = load_user_agents()
+user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 OPR/99.0.0.0"
 
 
 def collect_links_with_playwright(url, starting_domain, browser):
-    user_agent = random.choice(user_agents)
     page = browser.new_page()
     page.set_extra_http_headers({"User-Agent": user_agent})
     page.goto(url)
@@ -67,6 +67,10 @@ def collect_links_with_playwright(url, starting_domain, browser):
     for element in elements:
         link = element.get_attribute('href')
         if link and not any(link.startswith(delete_url) for delete_url in DELETE_URL_THAT_STARTS_WITH) and urlparse(link).netloc != starting_domain:
+            if link.startswith("http://"):
+                link = link.replace("http://", "https://")
+            if not link.startswith("https://"):
+                continue
             links.append(link)
     page.close()
     return links

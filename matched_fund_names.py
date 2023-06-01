@@ -4,6 +4,7 @@ from prompts import MATCHED_VC_NAMES_PROMPT_v2
 from langchain.llms import OpenAIChat
 from langchain.chains import RetrievalQA
 from get_last_response import get_last_response
+from langchain.chat_models import ChatOpenAI
 import openai
 import time
 import random

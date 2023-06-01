@@ -1,6 +1,9 @@
 from urllib.parse import urlparse
-from playwright.sync_api import sync_playwright
-import random
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+
 
 DELETE_URL_THAT_STARTS_WITH = (
    'https://b12.io', 'https://www.linkedin.com', 'https://vimeo.com',
@@ -44,49 +47,45 @@ DELETE_URL_THAT_STARTS_WITH = (
 )
 
 
-def load_user_agents():
-    try:
-        with open("user-agents.txt", 'r') as file:
-            return file.read().splitlines()
-    except FileNotFoundError:
-        print("user-agents.txt file not found.")
-        return []
+def collect_links_with_selenium(url, starting_domain):
+    options = Options()
+    options.add_argument("--disable-blink-features=AutomationControlled")
+    options.add_argument("--disable-gpu")
+    options.add_argument("--disable-extensions")
+    options.add_argument("--start-maximized")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+    options.add_argument('--headless')
+    options.add_argument("--user-data-dir=C:/Users/flexy/AppData/Local/Google/Chrome/User Data/Default")
+    options.add_experimental_option("excludeSwitches", ["enable-automation"])
+    options.add_experimental_option("useAutomationExtension", False)
+    options.add_argument(
+        "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 OPR/98.0.0.0")
 
+    service = Service('C:/Users/flexy/PycharmProjects/pythonProject2/chromedriver.exe')
+    service.start()
+    driver = webdriver.Remote(service.service_url, options=options)
+    driver.get(url)
 
-user_agents = load_user_agents()
-
-
-def collect_links_with_playwright(url, starting_domain):
-    with sync_playwright() as p:
-        user_agent = random.choice(user_agents)
-        browser = p.chromium.launch(headless=True)
-        page = browser.new_page()
-        page.set_extra_http_headers({"User-Agent": user_agent})
-        page.goto(url)
-
-        links = []
-        elements = page.query_selector_all('a')
-        for element in elements:
-            link = element.get_attribute('href')
-            if link and not any(link.startswith(delete_url) for delete_url in DELETE_URL_THAT_STARTS_WITH) and urlparse(link).netloc != starting_domain:
-                links.append(link)
-
-        browser.close()
-
-        return links
+    links = []
+    elements = driver.find_elements(By.TAG_NAME, 'a')
+    for element in elements:
+        link = element.get_attribute('href')
+        if link and not any(link.startswith(delete_url) for delete_url in DELETE_URL_THAT_STARTS_WITH) and urlparse(link).netloc != starting_domain:
+            links.append(link)
+    return links
 
 
 def collect_all_links(url):
     starting_domain = urlparse(url).netloc
     links = set()
 
-    # Collect links using Playwright
+    # Collect links using Selenium
     try:
-        playwright_links = collect_links_with_playwright(url, starting_domain)
-        links.update(playwright_links)
+        selenium_links = collect_links_with_selenium(url, starting_domain)
+        links.update(selenium_links)
     except Exception as e:
-        print(f"Error occurred while collecting links with Playwright: {str(e)}")
-
+        print(f"Error occurred while collecting links with Selenium: {str(e)}")
     return links
 
 

@@ -1,28 +1,29 @@
-from playwright.sync_api import sync_playwright
+import concurrent.futures
+from functools import partial
 import urllib.parse
 from bs4 import BeautifulSoup
 import random
 
+
 class Scraper:
     def __init__(self):
-        self.user_agents = self.load_user_agents()
+        # self.user_agents = self.load_user_agents()
+        self.user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 OPR/99.0.0.0"
 
-    @staticmethod
-    def load_user_agents():
-        try:
-            with open("user-agents.txt", 'r') as file:
-                return file.read().splitlines()
-        except FileNotFoundError:
-            return []
+    # @staticmethod
+    # def load_user_agents():
+    #     try:
+    #         with open("user-agents.txt", 'r') as file:
+    #             return file.read().splitlines()
+    #     except FileNotFoundError:
+    #         return []
 
     def scrape(self, url: str, browser) -> str:
-        visited_urls = set()
         text = ""
         try:
-            user_agent = random.choice(self.user_agents)
             page = browser.new_page()
-            page.set_extra_http_headers({"User-Agent": user_agent})
-            text = self.scrape_main(page, url, visited_urls)
+            page.set_extra_http_headers({"User-Agent": self.user_agent})
+            text = self.scrape_main(page, url)
             page.close()
         except Exception as e:
             print(e)
@@ -31,7 +32,7 @@ class Scraper:
     @staticmethod
     def extract_text(page, url: str) -> str:
         try:
-            page.goto(url, timeout=10000)
+            page.goto(url)
             html = page.content()
             soup = BeautifulSoup(html, 'html.parser')
             text = soup.get_text()
@@ -40,7 +41,8 @@ class Scraper:
             print(e)
             return ""
 
-    def scrape_main(self, page, start_url, visited_urls):
+    def scrape_main(self, page, start_url):
+        visited_urls = set()
         text = ""
         visited_urls.add(start_url)
         text += self.extract_text(page, start_url)
@@ -71,12 +73,13 @@ class Scraper:
 
     @staticmethod
     def scrape_subpages(page, url: str) -> str:
-        text = ""
-        text += Scraper.extract_text(page, url)
-        return text
+         text = ""
+         text += Scraper.extract_text(page, url)
+         return text
 
 
 def scrape_website(url, browser):
     scraper = Scraper()
     text = scraper.scrape(url, browser)
     return text
+

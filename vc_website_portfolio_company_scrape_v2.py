@@ -12,16 +12,16 @@ def get_status_code(url: str) -> int:
 
 
 def scrap_portfolio_website(url: str, browser) -> str:
-    text = ""
+    text = "-"
 
-    try:
-        with open("user-agents.txt", 'r') as file:
-            user_agents = file.read().splitlines()
-    except FileNotFoundError:
-        print("user-agents.txt file not found.")
-        return text
+    # try:
+    #     with open("user-agents.txt", 'r') as file:
+    #         user_agents = file.read().splitlines()
+    # except FileNotFoundError:
+    #     print("user-agents.txt file not found.")
+    #     return text
 
-    user_agent = random.choice(user_agents)
+    user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 OPR/99.0.0.0"
 
     try:
         page = browser.new_page()
