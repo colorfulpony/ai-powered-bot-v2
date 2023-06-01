@@ -43,60 +43,42 @@ DELETE_URL_THAT_STARTS_WITH = (
    "https://twitter.com/", "mailto:", "https://techcrunch.com/",
 )
 
-
-# def load_user_agents():
-#     try:
-#         with open("user-agents.txt", 'r') as file:
-#             return file.read().splitlines()
-#     except FileNotFoundError:
-#         print("user-agents.txt file not found.")
-#         return []
-#
-#
 # user_agents = load_user_agents()
 user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 OPR/99.0.0.0"
 
 
-def collect_links_with_playwright(url, starting_domain, browser):
-    page = browser.new_page()
-    page.set_extra_http_headers({"User-Agent": user_agent})
-    page.goto(url)
+async def collect_links_with_playwright(url, starting_domain, browser):
+    page = await browser.new_page()
+    await page.set_extra_http_headers({"User-Agent": user_agent})
+    await page.goto(url)
 
     links = []
-    elements = page.query_selector_all('a')
+    elements = await page.query_selector_all('a')
     for element in elements:
-        link = element.get_attribute('href')
+        link = await element.get_attribute('href')
         if link and not any(link.startswith(delete_url) for delete_url in DELETE_URL_THAT_STARTS_WITH) and urlparse(link).netloc != starting_domain:
-            if link.startswith("http://"):
-                link = link.replace("http://", "https://")
-            if not link.startswith("https://"):
-                continue
             links.append(link)
-    page.close()
+    await page.close()
     return links
 
 
-def collect_all_links(url, browser):
+async def collect_all_links(url, browser):
     starting_domain = urlparse(url).netloc
     links = set()
 
     # Collect links using Playwright
     try:
-        playwright_links = collect_links_with_playwright(url, starting_domain, browser)
+        playwright_links = await collect_links_with_playwright(url, starting_domain, browser)
         links.update(playwright_links)
     except Exception as e:
         print(f"Error occurred while collecting links with Playwright: {str(e)}")
     return links
 
 
-def get_portfolio_links(url, browser):
-    all_links = collect_all_links(url, browser)
+async def get_portfolio_links(url, browser):
+    all_links = await collect_all_links(url, browser)
 
     # Remove duplicate links
     unique_links = list(set(all_links))
-
-    # Print all the collected links
-    for link in unique_links:
-        print(link)
 
     return unique_links
