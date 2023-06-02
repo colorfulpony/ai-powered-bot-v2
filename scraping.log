@@ -1,0 +1,99 @@
+INFO:root:Visited url:https://www.9unicorns.in
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:Visited url:https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:Visited url:https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:ABS url: https://www.9unicorns.in/portfolio.html
+INFO:root:Visited url:https://www.9unicorns.in/portfolio.html
+INFO:root:BEFORE ABS url: https://wenetwork.co.in/
+INFO:root:ABS url: https://wenetwork.co.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:Visited url:https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:ABS url: https://docs.google.com/forms/d/e/1FAIpQLSfYVaBqc4O51MEbD4CodoT80Ill1GLfLdc-FwDyx-VyYTYAiA/viewform
+INFO:root:BEFORE ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:ABS url: https://yourstory.com/2019/08/venture-catalysts-startup-accelerator-9unicorns
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub11
+INFO:root:ABS url: https://www.9unicorns.in#sub11
+INFO:root:Visited url:https://www.9unicorns.in#sub11
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub12
+INFO:root:ABS url: https://www.9unicorns.in#sub12
+INFO:root:Visited url:https://www.9unicorns.in#sub12
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub13
+INFO:root:ABS url: https://www.9unicorns.in#sub13
+INFO:root:Visited url:https://www.9unicorns.in#sub13
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub14
+INFO:root:ABS url: https://www.9unicorns.in#sub14
+INFO:root:Visited url:https://www.9unicorns.in#sub14
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub15
+INFO:root:ABS url: https://www.9unicorns.in#sub15
+INFO:root:Visited url:https://www.9unicorns.in#sub15
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub16
+INFO:root:ABS url: https://www.9unicorns.in#sub16
+INFO:root:Visited url:https://www.9unicorns.in#sub16
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub21
+INFO:root:ABS url: https://www.9unicorns.in#sub21
+INFO:root:Visited url:https://www.9unicorns.in#sub21
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#sub22
+INFO:root:ABS url: https://www.9unicorns.in#sub22
+INFO:root:Visited url:https://www.9unicorns.in#sub22
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediapop
+INFO:root:ABS url: https://www.9unicorns.in#mediapop
+INFO:root:Visited url:https://www.9unicorns.in#mediapop
+INFO:root:BEFORE ABS url: https://www.9unicorns.in#mediauni
+INFO:root:ABS url: https://www.9unicorns.in#mediauni
+INFO:root:Visited url:https://www.9unicorns.in#mediauni
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/
+INFO:root:ABS url: https://www.9unicorns.in/
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/team.html
+INFO:root:ABS url: https://www.9unicorns.in/team.html
+INFO:root:BEFORE ABS url: https://www.9unicorns.in/contact.html
+INFO:root:ABS url: https://www.9unicorns.in/contact.html
+INFO:root:BEFORE ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:ABS url: https://www.facebook.com/9UnicornsVC
+INFO:root:BEFORE ABS url: https://twitter.com/9UnicornsVC
+INFO:root:ABS url: https://twitter.com/9UnicornsVC
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028F3FBCA2D0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/15bcec025bbfdb8cd3ec3acdababd52d
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028F40394650>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/15bcec025bbfdb8cd3ec3acdababd52d
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028F403BE2D0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/15bcec025bbfdb8cd3ec3acdababd52d
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028F403F3A50>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/15bcec025bbfdb8cd3ec3acdababd52d
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028F403F3190>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/15bcec025bbfdb8cd3ec3acdababd52d
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028F403F3D90>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/15bcec025bbfdb8cd3ec3acdababd52d
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028F40368750>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/15bcec025bbfdb8cd3ec3acdababd52d
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028F403BED90>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/15bcec025bbfdb8cd3ec3acdababd52d
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028F403EBE50>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/15bcec025bbfdb8cd3ec3acdababd52d
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028F403F3550>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/15bcec025bbfdb8cd3ec3acdababd52d
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028F40395A50>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/15bcec025bbfdb8cd3ec3acdababd52d
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028F40396E90>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/15bcec025bbfdb8cd3ec3acdababd52d
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028F3F7A39D0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/15bcec025bbfdb8cd3ec3acdababd52d
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028F403E9790>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/15bcec025bbfdb8cd3ec3acdababd52d
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028F403956D0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/15bcec025bbfdb8cd3ec3acdababd52d
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028F3E0D2550>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/15bcec025bbfdb8cd3ec3acdababd52d
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028F403F0710>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/15bcec025bbfdb8cd3ec3acdababd52d
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028F403F1A10>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/15bcec025bbfdb8cd3ec3acdababd52d
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F961719290>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/f3842827a7a6808b59d82bd710f0a8ad/elements
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F961744750>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/f3842827a7a6808b59d82bd710f0a8ad/elements
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F96176F550>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/f3842827a7a6808b59d82bd710f0a8ad/elements
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F9617A0D90>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/f3842827a7a6808b59d82bd710f0a8ad
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F9617A3450>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/f3842827a7a6808b59d82bd710f0a8ad
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F9617A2B10>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/f3842827a7a6808b59d82bd710f0a8ad
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F9617B4890>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/f3842827a7a6808b59d82bd710f0a8ad/elements
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F96179B410>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/f3842827a7a6808b59d82bd710f0a8ad/elements
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F96179BE90>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/f3842827a7a6808b59d82bd710f0a8ad/elements
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F96180E150>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/f3842827a7a6808b59d82bd710f0a8ad/elements
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F96180E910>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/f3842827a7a6808b59d82bd710f0a8ad/elements
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F96180F0D0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/f3842827a7a6808b59d82bd710f0a8ad/elements
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))': /session/404fa8be2bfde9d32aa15fc03177f8fc
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F2D12D8110>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/404fa8be2bfde9d32aa15fc03177f8fc
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))': /session/bbb4353c35af3a4f45a1c95646758a69
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))': /session/0157366217b7985bf3e6feb3c74663a9
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000024D0F768310>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/0157366217b7985bf3e6feb3c74663a9
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000024D0F769B90>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение')': /session/0157366217b7985bf3e6feb3c74663a9

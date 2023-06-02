@@ -71,14 +71,15 @@ async def get_info_about_vc_portfolio_startups(portfolio_url, max_portfolios=10,
 async def process_vc_data(vc_name, vc_website_url, vc_portfolio_url, vc_linkedin_url, analyst_name, analyst_email, vc_stages, vc_industries, browser) -> tuple:
     start_vc_portfolio = time.time()
     portfolio_startups = await get_info_about_vc_portfolio_startups(vc_portfolio_url, browser=browser)
+    print(portfolio_startups)
     end_vc_portfolio = time.time()
     print(f'Execution time of getting ful info about all startups from vc portfolio: {end_vc_portfolio - start_vc_portfolio}')
 
     start_vc_industries = time.time()
     if vc_stages == "-" or vc_industries == "-":
         industries, stages = await get_info_about_vc(vc_name, vc_website_url, browser)
-        vc_industries = f"{vc_industries}, {industries}" if vc_industries else industries
-        vc_stages = f"{vc_stages}, {stages}" if vc_stages else stages
+        vc_industries = f"{vc_industries}, {industries}" if vc_industries != "-" else industries
+        vc_stages = f"{vc_stages}, {stages}" if vc_stages != "-" else stages
     end_vc_industries = time.time()
     print(f'Execution time of getting ful info about vc industries and stages: {end_vc_industries - start_vc_industries}')
 
@@ -92,7 +93,7 @@ async def main():
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
 
-        data_from_sheets = get_data_from_google_sheets("A2:H3")
+        data_from_sheets = get_data_from_google_sheets("A2:H2")
 
         for vc_data in data_from_sheets:
             vc_name, vc_website_url, vc_portfolio_url, vc_linkedin_url, analyst_name, analyst_email, vc_stages, vc_industries = vc_data

@@ -57,6 +57,10 @@ async def collect_links_with_playwright(url, starting_domain, browser):
     for element in elements:
         link = await element.get_attribute('href')
         if link and not any(link.startswith(delete_url) for delete_url in DELETE_URL_THAT_STARTS_WITH) and urlparse(link).netloc != starting_domain:
+            if link.startswith("http://"):
+                link = link.replace("http://", "https://")
+            if not link.startswith("https://"):
+                continue
             links.append(link)
     await page.close()
     return links
