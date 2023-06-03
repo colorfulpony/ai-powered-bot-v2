@@ -9,7 +9,7 @@ from insert_into_db import insert_data_into_db
 from vc_website_scrape import scrape_website
 import questions as constants
 import prompts as INPUTS
-from gpt_repeat_answer_3_times import repeat_gpt_answer_3_time
+from gpt_repeat_answer_2_times import repeat_gpt_answer_3_time
 from get_info_from_sheets import get_data_from_google_sheets
 
 

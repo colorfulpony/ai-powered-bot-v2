@@ -7,7 +7,7 @@ from get_gpt_response_via_text import gpt_info_via_text
 from get_gpt_response_via_text_for_portfolio_website_solution import gpt_info_via_text as gpt_portfolio_startup_solution
 import questions as constants
 import prompts as INPUTS
-from gpt_repeat_answer_3_times import repeat_gpt_answer_3_time
+from gpt_repeat_answer_2_times import repeat_gpt_answer_3_time
 from get_info_from_sheets import get_data_from_google_sheets
 from playwright.async_api import async_playwright
 import asyncio

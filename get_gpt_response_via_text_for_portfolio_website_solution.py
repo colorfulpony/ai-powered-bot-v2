@@ -1,5 +1,6 @@
 from langchain.llms import OpenAI
 from langchain import PromptTemplate, LLMChain
+from langchain.chat_models import ChatOpenAI
 import openai
 import time
 import random
@@ -65,14 +66,17 @@ Your answer:
 
     prompt = PromptTemplate(template=template, input_variables=["question", "context"])
 
-    llm = OpenAI()
+    llm = ChatOpenAI(
+            temperature=0,
+            model_name="gpt-3.5-turbo",
+        )
 
     llm_chain = LLMChain(prompt=prompt, llm=llm)
 
     question = question
     context = text
 
-    res = llm_chain.run({'question': question, 'context': context})
+    res = await llm_chain.arun({'question': question, 'context': context})
 
     return res
 

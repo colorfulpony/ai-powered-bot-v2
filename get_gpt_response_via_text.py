@@ -3,11 +3,7 @@ from langchain.embeddings import OpenAIEmbeddings
 from langchain.chains import RetrievalQAWithSourcesChain
 from langchain.chains.qa_with_sources import load_qa_with_sources_chain
 from langchain.chat_models import ChatOpenAI
-
 from langchain.vectorstores import Chroma
-import openai
-import time
-import random
 
 
 # def retry_with_exponential_backoff(
@@ -56,40 +52,27 @@ import random
 
 # @retry_with_exponential_backoff
 async def gpt_info_via_text(cleaned_text, _input):
-    # text splitter
     text_splitter = RecursiveCharacterTextSplitter(
-        separators=['\n\n', '\n', ' ', '.', ',', ''],
-        chunk_size=500,
-        chunk_overlap=80
+        separators=['\n\n', '\n', ' ', '.', ',', ''], chunk_size=500, chunk_overlap=80
     )
     split_text = text_splitter.split_text(cleaned_text)
 
-    # embeddings
     embeddings = OpenAIEmbeddings()
 
-    # vector store
     docsearch = Chroma.from_texts(
-        split_text,
-        embeddings,
-        metadatas=[{"source": str(i)} for i in range(len(split_text))]
+        split_text, embeddings, metadatas=[{"source": str(i)} for i in range(len(split_text))]
     )
 
-    # chain
     qa_chain = load_qa_with_sources_chain(
-        ChatOpenAI(
-            temperature=0,
-            model_name="gpt-3.5-turbo",
-        ),
-        chain_type="map_reduce"
+        ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo",), chain_type="map_reduce"
     )
 
     qa = RetrievalQAWithSourcesChain(
         combine_documents_chain=qa_chain,
         retriever=docsearch.as_retriever(),
-        reduce_k_below_max_tokens=True
+        reduce_k_below_max_tokens=True,
     )
 
-    res = qa({"question": _input})
+    res = qa({"question": _input, "return_only_outputs": True})
 
     return res["answer"]
-
