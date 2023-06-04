@@ -7,7 +7,7 @@ format_instructions = output_parser.get_format_instructions()
 
 # industries
 INDUSTRIES_PROMPT = PromptTemplate(
-    template="You got information about an investment fund. Your task is to analyze the info and find or assume in which {subject} this fund invests or has invested in. If you don't know the answer just write 'I don't know'. \n{format_instructions}",
+    template="You got information about an investment fund. Your task is to analyze the information and find or assume in which {subject} this fund invests or has invested in. \n{format_instructions}",
     input_variables=["subject"],
     partial_variables={"format_instructions": format_instructions}
 )
@@ -15,7 +15,7 @@ INDUSTRIES_INPUT = INDUSTRIES_PROMPT.format(subject="industries")
 
 # stages
 STAGES_PROMPT = PromptTemplate(
-    template="You got information about an investment fund. Your task is to analyze the info and find or assume in which {subject} this fund invests or has invested in. If you don't know the answer just write 'I don't know'. \n{format_instructions}",
+    template="You got information about an investment fund. Your task is to analyze the info and find or assume in which {subject} this fund invests or has invested in. \n{format_instructions}",
     input_variables=["subject"],
     partial_variables={"format_instructions": format_instructions}
 )

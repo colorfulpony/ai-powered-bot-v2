@@ -5,7 +5,6 @@ import random
 class Scraper:
     def __init__(self):
         self.user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 OPR/99.0.0.0"
-
     async def scrape(self, url: str, browser) -> str:
         visited_urls = set()
         text = ""
@@ -15,7 +14,8 @@ class Scraper:
             text = await self.scrape_main(page, url, visited_urls)
             await page.close()
         except Exception as e:
-            print(e)
+            text = ""
+            # print(e)
         return text
 
     @staticmethod
@@ -27,7 +27,7 @@ class Scraper:
             text = soup.get_text()
             return text
         except Exception as e:
-            print(e)
+            # print(e)
             return ""
 
     async def scrape_main(self, page, start_url, visited_urls):
@@ -56,7 +56,8 @@ class Scraper:
                 visited_urls.add(abs_url)
                 text += await self.scrape_subpages(page, abs_url)
             except Exception as e:
-                print(e)
+                text = ""
+                # print(e)
         return text
 
     @staticmethod

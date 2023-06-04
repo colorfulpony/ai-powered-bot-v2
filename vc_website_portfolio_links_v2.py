@@ -75,7 +75,8 @@ async def collect_all_links(url, browser):
         playwright_links = await collect_links_with_playwright(url, starting_domain, browser)
         links.update(playwright_links)
     except Exception as e:
-        print(f"Error occurred while collecting links with Playwright: {str(e)}")
+        text = ""
+        # print(f"Error occurred while collecting links with Playwright: {str(e)}")
     return links
 
 

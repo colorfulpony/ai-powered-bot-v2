@@ -7,7 +7,7 @@ async def get_status_code(url: str) -> int:
             async with session.get(url) as response:
                 return response.status
     except aiohttp.ClientError as e:
-        print(f"Error occurred while making the HTTP request: {str(e)}")
+        # print(f"Error occurred while making the HTTP request with link {url}: {str(e)}")
         return 0
 
 
@@ -25,7 +25,9 @@ async def scrap_portfolio_website(url: str, browser) -> str:
             await page.goto(url)
             text = await page.inner_text('body')
     except Exception as e:
-        print(f"Error occurred while scraping portfolio website: {str(e)}")
+        text = ""
+        return text
+        # print(f"Error occurred while scraping portfolio website: {str(e)}")
     finally:
         await page.close()
 

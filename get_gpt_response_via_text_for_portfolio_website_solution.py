@@ -54,7 +54,6 @@ import random
 
 
 async def gpt_info_via_text(text, question):
-    res = "I don't know"
     template = """You are a very good analyst of startups. Answer task below based on context information below. Don't try to make up answer. If you not sure about the answer just write "I don't know"
 Task: {question}
 
