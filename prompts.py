@@ -7,7 +7,7 @@ format_instructions = output_parser.get_format_instructions()
 
 # industries
 INDUSTRIES_PROMPT = PromptTemplate(
-    template="You got information about an investment fund. Your task is to analyze the information and find or assume in which {subject} this fund invests or has invested in. \n{format_instructions}",
+    template="You got information about an investment fund. Your task is to analyze the information and find or assume in which {subject} this fund invests or has invested in.\n If you aren't sure about the answer just write - 'I don't know'. \n{format_instructions}",
     input_variables=["subject"],
     partial_variables={"format_instructions": format_instructions}
 )
@@ -15,7 +15,7 @@ INDUSTRIES_INPUT = INDUSTRIES_PROMPT.format(subject="industries")
 
 # stages
 STAGES_PROMPT = PromptTemplate(
-    template="You got information about an investment fund. Your task is to analyze the info and find or assume in which {subject} this fund invests or has invested in. \n{format_instructions}",
+    template="You got information about an investment fund. Your task is to analyze the info and find or assume in which {subject} this fund invests or has invested in.\n If you aren't sure about the answer just write - 'I don't know'. \n{format_instructions}",
     input_variables=["subject"],
     partial_variables={"format_instructions": format_instructions}
 )
@@ -65,7 +65,7 @@ CONTEXT:
 # get vc names
 MATCHED_VC_NAMES_PROMPT_v2 = PromptTemplate(
     template="""Based on the USER'S STARTUP INFORMATION, find a venture capital funds that is likely to invest in the user's startup among the funds described in CONTEXT
-In response, write a list of the names of these funds separated by commas(minimum 3 funds(maximum 10), but all of them should be from CONTENXT). Don't make up any data.
+In response, write a list of the names of these funds separated by commas(minimum 3 funds(maximum 10), but all of them should be from CONTENXT). Don't make up any data. 
 
 USER'S STARTUP INFORMATION:
 {question}

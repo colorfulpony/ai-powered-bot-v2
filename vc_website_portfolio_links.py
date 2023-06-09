@@ -1,9 +1,5 @@
+import traceback
 from urllib.parse import urlparse
-from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.options import Options
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-
 
 DELETE_URL_THAT_STARTS_WITH = (
    'https://b12.io', 'https://www.linkedin.com', 'https://vimeo.com',
@@ -43,64 +39,66 @@ DELETE_URL_THAT_STARTS_WITH = (
    'https://www.costco.com/', 'https://www.netflix.com/', 'https://www.hulu.com/',
    'https://www.disneyplus.com/', 'https://www.primevideo.com/', 'https://www.hbo.com/',
    'https://www.spotify.com/', 'https://www.apple.com/apple-music/', "/", "#", "https://docs.google.com/",
-   "https://twitter.com/", "mailto:", "https://techcrunch.com/",
+   "https://twitter.com/", "mailto:", "https://techcrunch.com/", "https://brdg.app", "https://techcrunch.com",
+   "https://www.coursera.org", "webflow"
 )
 
+# user_agents = load_user_agents()
+user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36 OPR/99.0.0.0"
 
-def collect_links_with_selenium(url, starting_domain):
-    options = Options()
-    options.add_argument("--disable-blink-features=AutomationControlled")
-    options.add_argument("--disable-gpu")
-    options.add_argument("--disable-extensions")
-    options.add_argument("--start-maximized")
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-dev-shm-usage")
-    options.add_argument('--headless')
-    options.add_argument("--user-data-dir=C:/Users/flexy/AppData/Local/Google/Chrome/User Data/Default")
-    options.add_experimental_option("excludeSwitches", ["enable-automation"])
-    options.add_experimental_option("useAutomationExtension", False)
-    options.add_argument(
-        "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 OPR/98.0.0.0")
 
-    service = Service('C:/Users/flexy/PycharmProjects/pythonProject2/chromedriver.exe')
-    service.start()
-    driver = webdriver.Remote(service.service_url, options=options)
-    driver.get(url)
+async def collect_links_with_playwright(url, starting_domain, browser):
+    try:
+        page = await browser.new_page()
+        await page.set_extra_http_headers({"User-Agent": user_agent})
+        await page.goto(url)
 
-    links = []
-    elements = driver.find_elements(By.TAG_NAME, 'a')
-    for element in elements:
-        link = element.get_attribute('href')
-        if link and not any(link.startswith(delete_url) for delete_url in DELETE_URL_THAT_STARTS_WITH) and urlparse(link).netloc != starting_domain:
-            if link.startswith("http://"):
-                link = link.replace("http://", "https://")
-            if not link.startswith("https://"):
+        links = []
+        elements = await page.query_selector_all('a')
+        for element in elements:
+            link = await element.get_attribute('href')
+            if link and not any(link.startswith(delete_url) for delete_url in DELETE_URL_THAT_STARTS_WITH) and urlparse(link).netloc != starting_domain:
+                if (delete_url not in link for delete_url in DELETE_URL_THAT_STARTS_WITH):
+                    if link.startswith("http://"):
+                        link = link.replace("http://", "https://")
+                    if not link.startswith("https://"):
+                        continue
+                    links.append(link)
+                else:
+                    continue
+            else:
                 continue
-            links.append(link)
-    return links
+        await page.close()
+        return links
+    except Exception as e:
+        print(e)
+        traceback.print_exc()
+        return None
 
 
-def collect_all_links(url):
+async def collect_all_links(url, browser):
     starting_domain = urlparse(url).netloc
     links = set()
 
-    # Collect links using Selenium
+    # Collect links using Playwright
     try:
-        selenium_links = collect_links_with_selenium(url, starting_domain)
-        links.update(selenium_links)
+        playwright_links = await collect_links_with_playwright(url, starting_domain, browser)
+        if playwright_links is None:
+            return None
+        links.update(playwright_links)
     except Exception as e:
-        print(f"Error occurred while collecting links with Selenium: {str(e)}")
+        print(e)
+        traceback.print_exc()
+        return None
     return links
 
 
-def get_portfolio_links(url):
-    all_links = collect_all_links(url)
+async def get_portfolio_links(url, browser):
+    all_links = await collect_all_links(url, browser)
+    if all_links is None:
+        return None
 
     # Remove duplicate links
     unique_links = list(set(all_links))
-
-    # Print all the collected links
-    for link in unique_links:
-        print(link)
 
     return unique_links

@@ -1,4 +1,6 @@
 import re
+import traceback
+
 
 class TextCleaner:
     @staticmethod
@@ -26,5 +28,10 @@ class TextCleaner:
 
 
 def clean_text(text):
-    cleaned_text = TextCleaner.remove_repeating_text(text)
-    return cleaned_text
+    try:
+        cleaned_text = TextCleaner.remove_repeating_text(text)
+        return cleaned_text
+    except Exception as e:
+        print(e)
+        traceback.print_exc()
+        return ""

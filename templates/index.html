@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Startup Information</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#startupForm').submit(function(event) {
+                event.preventDefault(); // Prevent the default form submission
+
+                // Get the form data
+                var formData = $(this).serialize();
+
+                // Send an AJAX request to the server
+                $.ajax({
+                    type: 'POST',
+                    url: '/process',
+                    data: formData,
+                    success: function(response) {
+                        displayResult(response); // Display the result
+                    },
+                    error: function(error) {
+                        console.log(error); // Handle the error
+                    }
+                });
+            });
+
+            function displayResult(result) {
+                var resultContainer = $('#resultContainer');
+                resultContainer.empty(); // Clear previous results
+
+                // Iterate over each object in the array
+                result.forEach(function(obj, index) {
+                    // Create a table to display the object's data
+                    var table = $('<table>').addClass('table');
+                    var tbody = $('<tbody>');
+
+                    // Iterate over the key-value pairs in the object
+                    Object.keys(obj).forEach(function(key) {
+                        var row = $('<tr>');
+                        var labelCell = $('<td>').text(key);
+                        var valueCell = $('<td>').text(obj[key]);
+
+                        row.append(labelCell);
+                        row.append(valueCell);
+                        tbody.append(row);
+                    });
+
+                    table.append(tbody);
+
+                    // Add a horizontal line after each table except the last one
+                    if (index < result.length - 1) {
+                        table.after($('<hr>'));
+                    }
+
+                    resultContainer.append(table);
+                });
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Startup Information</h1>
+
+        <form id="startupForm" class="mt-4">
+            <div class="form-group">
+                <label for="startupName">Startup Name:</label>
+                <input type="text" class="form-control" id="startupName" name="startup_name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="startupStage">Startup Stage:</label>
+                <input type="text" class="form-control" id="startupStage" name="startup_stage" required>
+            </div>
+
+            <div class="form-group">
+                <label for="startupIndustry">Startup Industry:</label>
+                <input type="text" class="form-control" id="startupIndustry" name="startup_industry" required>
+            </div>
+
+            <div class="form-group">
+                <label for="problemsSolved">Problems Solved:</label>
+                <input type="text" class="form-control" id="problemsSolved" name="problems_solved" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <div id="resultContainer" class="mt-4"></div>
+    </div>
+</body>
+</html>
