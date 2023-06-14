@@ -12,7 +12,7 @@ async def insert_data_into_google_sheets(data):
         last_row_index = len(worksheet.get_all_values()) + 1
 
         # Construct the data range
-        data_range = f'A{last_row_index}:K{last_row_index + len(data) - 1}'
+        data_range = f'A{last_row_index}:J{last_row_index + len(data) - 1}'
 
         # Insert data into the next empty row
         worksheet.update(data_range, data)

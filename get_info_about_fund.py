@@ -62,7 +62,7 @@ def get_info_about_fund(fund_name, startup_info):
 
         # Create the question answering model
         llm = ChatOpenAI(
-            model_name="gpt-3.5-turbo",
+            model_name="gpt-3.5-turbo-16k",
             temperature=0
         )
         qa = RetrievalQA.from_llm(llm=llm, retriever=docsearch.as_retriever(), prompt=LAST_ANSWER_PROMPT)

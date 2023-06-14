@@ -19,7 +19,7 @@ async def gpt_info_via_text(text, question):
 
         llm = ChatOpenAI(
                 temperature=0,
-                model_name="gpt-3.5-turbo",
+                model_name="gpt-3.5-turbo-16k",
             )
 
         llm_chain = LLMChain(prompt=prompt, llm=llm)

@@ -15,4 +15,5 @@ def main(startup_name, startup_stage, startup_industry, problems_solved):
         for fund_name in fund_names:
             raw_result = get_info_about_fund(fund_name, query)
             result = refactor_output(raw_result)
-            return jsonify(result), 200
+            print(result)
+            # return jsonify(result), 200

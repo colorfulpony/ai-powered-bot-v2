@@ -1,6 +1,8 @@
+import time
 import traceback
 
 import aiohttp
+from bs4 import BeautifulSoup
 
 
 async def get_status_code(url: str) -> int:
@@ -20,17 +22,22 @@ async def scrap_portfolio_website(url: str, browser) -> str:
 
     try:
         page = await browser.new_page()
+        page.set_default_navigation_timeout(20000)
         await page.set_extra_http_headers({"User-Agent": user_agent})
 
-        status_code = await get_status_code(url)
-        if 200 <= status_code < 300:
-            await page.goto(url)
-            text = await page.inner_text('body')
+        # status_code = await get_status_code(url)
+        # if 200 <= status_code < 300:
+        await page.goto(url)
+        time.sleep(3)
+        html = await page.content()
+        soup = BeautifulSoup(html, 'html.parser')
+        text = soup.get_text()
+        await page.close()
     except Exception as e:
+        await page.close()
         print(e)
         traceback.print_exc()
         return ""
-    finally:
-        await page.close()
 
+    await page.close()
     return text

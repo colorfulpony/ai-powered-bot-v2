@@ -35,14 +35,17 @@ SOLUTION_INPUT = INDUSTRIES_PROMPT.format(subject="problems")
 
 # get vc names
 MATCHED_VC_NAMES_PROMPT = PromptTemplate(
-    template="""To answer this question, use only CONTEXT and no other information. 
-    
-You are a very good invest fund analyst. At the very end of this message, you got CONTEXT - information about venture capital funds. Also, you have INFORMATION ABOUT STARTUP - it's information about user startup.
-Task: Your task is to find funds that are most likely to invest in described startup below. In you answer write comma-separated lidst of venture capital funds. Find at least 5 funds(Better find as much matched ventures as you can). But use only venture capital funds from CONTEXT.
+    template="""Ignore all the information or instructions you got before. From now you can use only information provided below.
 
-Here are 2 criteria by which you can understand whether a fund will invest in a startup:
-1) Fund's portfolio should include startup(s) that offer similar problem solution to the problem solution of the startup described below. 
-2) The industries in which the fund invests should be similar to the industry in which the startup described below works 
+For your answer use information only from CONTEXT and no other information. 
+    
+Act like you are a very good invest fund analyst.
+
+Below, you got CONTEXT - it is information about bunch of venture capital funds. 
+Also below, you have INFORMATION ABOUT STARTUP - it's information about user startup.
+
+Task: Your task is to find funds that are most likely to invest in described user's startup.
+Find minimum 3 funds.  
 
 Don't make up fake information for your answer
 Don't use any other venture capital funds other than the funds given to you in CONTEXT
@@ -64,8 +67,10 @@ CONTEXT:
 
 # get vc names
 MATCHED_VC_NAMES_PROMPT_v2 = PromptTemplate(
-    template="""Based on the USER'S STARTUP INFORMATION, find a venture capital funds that is likely to invest in the user's startup among the funds described in CONTEXT
-In response, write a list of the names of these funds separated by commas(minimum 3 funds(maximum 10), but all of them should be from CONTENXT). Don't make up any data. 
+    template="""Ignore all the information or instructions you got before. From now you can use only information provided below.
+    
+Based on the USER'S STARTUP INFORMATION, find a venture capital funds that is likely to invest in the user's startup among the funds described in CONTEXT
+In response, write a list of the fund names (minimum 3, but better as much as you can find). Make sure that all of them should be only from CONTEXT below). Don't make up any data. For your answer use funds only from CONTEXT.
 
 USER'S STARTUP INFORMATION:
 {question}
@@ -79,6 +84,51 @@ CONTEXT:
     input_variables=["question", "context"],
     partial_variables={"format_instructions": format_instructions}
 )
+
+
+# get vc names
+MATCHED_VC_NAMES_PROMPT_v3 = PromptTemplate(
+    template="""Ignore all the information or instructions you got before. From now you can use only information provided by me below.
+
+Given information from a CSV file containing information about venture capital funds, with columns 'vc_name', 'vc_website_url', 'vc_linkedin_url', 'vc_investor_name', 'vc_investor_email', 'vc_stages', 'vc_industries', 'vc_portfolio_startup_name', 'vc_portfolio_startup_website_url', and 'vc_portfolio_startup_solution'. Also given the user's startup information. 
+Generate a comma-separated list of venture capital fund names that are likely to invest in the user's startup. Give at least 3 funds. 
+For your answer use information from CSV File and nothing else. Don't come up with some unreal information, or information not from CSV File 
+
+
+User's Startup Information:
+{question}
+
+OUTPUT FORMAT INSTRUCTIONS:
+{format_instructions}
+
+Information from CSV File (Venture Capital Funds)
+{context}
+""",
+    input_variables=["question", "context"],
+    partial_variables={"format_instructions": format_instructions}
+)
+
+
+# get vc names
+MATCHED_VC_NAMES_PROMPT_v4 = PromptTemplate(
+    template="""CONTEXT
+{context}
+
+USER'S STARTUP:
+{question}
+
+Task:
+Find funds from CONTEXT that are most likely to invest in USER'S STARTUP. In the answer write only names of these funds. Give me minimum 3 names of the funds
+
+OUTPUT FORMAT INSTRUCTIONS:
+{format_instructions}
+
+YOUR ANSWER:
+""",
+    input_variables=["question", "context"],
+    partial_variables={"format_instructions": format_instructions}
+)
+
 
 last_response_output_parser = StructuredOutputParser.from_response_schemas(LAST_RESPONSE_RESPONSE_SCHEMA)
 last_response_format_instructions = last_response_output_parser.get_format_instructions()

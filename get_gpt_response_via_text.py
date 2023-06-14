@@ -25,7 +25,7 @@ async def gpt_info_via_text(cleaned_text, _input):
         )
 
         qa_chain = load_qa_with_sources_chain(
-            ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo",), chain_type="map_rerank"
+            ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo-16k",), chain_type="map_rerank"
         )
 
         qa = RetrievalQAWithSourcesChain(

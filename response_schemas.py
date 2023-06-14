@@ -52,15 +52,19 @@ LAST_RESPONSE_RESPONSE_SCHEMA = [
         description="Write the website url of the investment fund"
     ),
     ResponseSchema(
+        name="Fund linkedIn",
+        description="Write the linkedin url of the investment fund if there is such. If there is no linkedIn url - just write '/'"
+    ),
+    ResponseSchema(
         name="Analyst name",
         description="Write name of the analyst of the investment fund"
     ),
     ResponseSchema(
-        name="Analyst linkedin",
-        description="Write linkedin url of the analyst of the investment fund"
+        name="Analyst email",
+        description="Write email of the analyst of the investment fund"
     ),
     ResponseSchema(
         name="Individual email message",
-        description="Personalized email to the investment fund analyst. An email that a user can use to get an investment from this fund. One of the sentences should be about 1-2 startup(s) that this investment fund has invested in before (but only include those that solve very similar problems and are in quite similiar industry as the user's startup). Be sure to include the name and website url of the startup(s) in which the investment fund has invested in the following form {StartupName(startupname.com), StartupName2(startupname2.com)}"
+        description="Personalized email to the investment fund analyst. An email that a user can use to get an investment from this fund. One of the sentences should be about 1-2 startup(s) that this investment fund has invested in before (but only include those that solve very similar problems and are in quite similiar industry as the user's startup). Be sure to include the name of the startup(s) and website url of the startup(s) in which the investment fund has invested in the following format: StartupName(startupname.com), StartupName2(startupname2.com). Use the name of the startup and the link to the website only as given in the information"
     )
 ]
