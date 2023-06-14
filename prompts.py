@@ -21,6 +21,30 @@ STAGES_PROMPT = PromptTemplate(
 )
 STAGES_INPUT = INDUSTRIES_PROMPT.format(subject="stages")
 
+# test
+TEST_PROMPT = PromptTemplate(
+    template="""You got information form a CSV File that has information about a lot of Venture Capital Funds. FOR YOUR ANSWER YOU ONLY THIS INFORMATION
+ 
+TASK:
+Your task is to find Venture Capital Funds that are most likely to invest in described below startup. 
+In response, write a list of the Venture Capital Funds names that probably will invest in startup described below. For your answer you must find at least 5 funds 
+
+Don't make up fake information for your answer
+Don't use any other venture capital funds other than the funds given to you before.
+
+INFORMATION ABOUT STARTUP:
+{subject}
+
+OUTPUT FORMAT INSTRUCTIONS:
+{format_instructions}
+
+YOUR ANSWER:
+""",
+    input_variables=["subject"],
+    partial_variables={"format_instructions": format_instructions}
+)
+TEST_INPUT = TEST_PROMPT.format(subject="stages")
+
 # solution
 SOLUTION_PROMPT = PromptTemplate(
     template="""You are a very good analyst of startups.
