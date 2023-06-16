@@ -1,6 +1,8 @@
 import traceback
 
+from langchain.document_loaders import CSVLoader
 from langchain.embeddings.openai import OpenAIEmbeddings
+from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores import Chroma
 from prompts import LAST_ANSWER_PROMPT
 from langchain.chains import RetrievalQA
@@ -57,8 +59,29 @@ def retry_with_exponential_backoff(
 @retry_with_exponential_backoff
 def get_info_about_fund(fund_name, startup_info):
     try:
+        # embeddings = OpenAIEmbeddings()
+        # docsearch = Chroma(persist_directory="chroma_save", embedding_function=embeddings)
+
+        loader = CSVLoader(file_path='./new_data.csv', encoding="utf-8", csv_args={
+            'delimiter': ',',
+            'fieldnames': [
+                'vc_name', 'vc_website_url', 'vc_linkedin_url', 'vc_investor_name',
+                'vc_investor_email', 'vc_stages', 'vc_industries',
+                'vc_portfolio_startup_name', 'vc_portfolio_startup_website_url',
+                'vc_portfolio_startup_solution'
+            ]
+        })
+
+        documents = loader.load()
+
+        text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
+        docs = text_splitter.split_documents(documents)
+
         embeddings = OpenAIEmbeddings()
-        docsearch = Chroma(persist_directory="chroma_save", embedding_function=embeddings)
+        docsearch = Chroma.from_documents(
+            documents=documents,
+            embedding=embeddings,
+        )
 
         # Create the question answering model
         llm = ChatOpenAI(

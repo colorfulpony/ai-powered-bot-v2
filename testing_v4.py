@@ -1,13 +1,14 @@
 import os
 import traceback
 
+from langchain import FAISS
 from langchain.document_loaders import CSVLoader
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.text_splitter import CharacterTextSplitter
 
 from refactor_output import refactor_output
 from langchain.vectorstores import Chroma
-from prompts import MATCHED_VC_NAMES_PROMPT
+from prompts import MATCHED_VC_NAMES_PROMPT_v6, TEST_PROMPT3
 from langchain.chains import RetrievalQA
 from get_info_about_fund import get_info_about_fund
 from langchain.chat_models import ChatOpenAI
@@ -15,7 +16,7 @@ import openai
 import time
 import random
 
-
+# Set OpenAI API key
 os.environ["OPENAI_API_KEY"] = "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"
 
 # Access the API key and use it in API requests
@@ -70,7 +71,7 @@ def retry_with_exponential_backoff(
 @retry_with_exponential_backoff
 def get_matched_fund_names(query):
     try:
-        loader = CSVLoader(file_path='./new_data.csv', csv_args={
+        loader = CSVLoader(file_path='./new_data.csv', encoding="utf-8", csv_args={
             'delimiter': ',',
             'fieldnames': [
                 'vc_name', 'vc_website_url', 'vc_linkedin_url', 'vc_investor_name',
@@ -82,26 +83,29 @@ def get_matched_fund_names(query):
 
         documents = loader.load()
 
-        text_splitter = CharacterTextSplitter(chunk_size=14000, chunk_overlap=100)
+        text_splitter = CharacterTextSplitter(chunk_size=20000, chunk_overlap=0)
         docs = text_splitter.split_documents(documents)
 
         embeddings = OpenAIEmbeddings()
-        docsearch = Chroma.from_documents(documents=docs, embedding=embeddings, persist_directory="test_chroma_save")
-
-        # embeddings = OpenAIEmbeddings()
-        # docsearch = Chroma(persist_directory="chroma_save", embedding_function=embeddings)
-
-        # Create the question answering model
-        llm = ChatOpenAI(
-            model_name="gpt-3.5-turbo-16k",
-            temperature=0
+        docsearch = Chroma.from_documents(
+            documents=docs,
+            embedding=embeddings,
         )
-        qa = RetrievalQA.from_llm(llm=llm, retriever=docsearch.as_retriever(), prompt=MATCHED_VC_NAMES_PROMPT)
 
+        chain_type_kwargs = {"prompt": MATCHED_VC_NAMES_PROMPT_v6}
+
+        qa = RetrievalQA.from_chain_type(
+            llm=ChatOpenAI(),
+            chain_type="stuff",
+            retriever=docsearch.as_retriever(),
+            chain_type_kwargs=chain_type_kwargs
+        )
+
+        _input = TEST_PROMPT3.format(subject=query)
         # Ask a question and get an answer
-        answer = qa.run(query=query)
-        print(answer)
-        return answer
+        result = qa({"query": _input})
+        print(result['result'])
+        return result['result']
     except Exception as e:
         print(e)
         traceback.print_exc()
@@ -109,8 +113,6 @@ def get_matched_fund_names(query):
 
 
 def main():
-    print("Bot is ready to chat. Type 'exit' to stop chatting.")
-
     # startup_name = input("Enter the startup name: ")
     # startup_industry = input("Enter the startup industry: ")
     # startup_stage = input("Enter the startup stage: ")
@@ -123,7 +125,7 @@ def main():
 
     startup_name = "Juko"
     startup_industry = "Finance, automation, money"
-    startup_stage = "Seed"
+    startup_stage = "Seed, early-stage, and Series A"
     problems_solved = "It solves the user problem of automating key areas of business operations such as invoicing, payment collections, bulk payouts, GST filing, and customer data management."
 
     # startup_name = "SIRPLUS"
@@ -131,21 +133,13 @@ def main():
     # startup_stage = "Seed"
     # problems_solved = "It helps consumer to buy let over food from store at an attractive price to help reduce foodwaste and save the planet"
 
-    query = f"{startup_name} is a startup that works at {startup_stage} stage(s) in the {startup_industry} industry(s) that solves the following problems: {problems_solved}."
+    # startup_name = "Kol"
+    # startup_industry = "AI/ML,B2B,B2C,E-commerce,DTC,Consumer,Edtech,Enterprise Software,FemTech,Foodtech,Future of Work & Productivity,Marketplace,SaaS"
+    # startup_stage = "Seed, Series A"
+    # problems_solved = "Kol is a startup that provides a powerful AI assistant to help users create content in seconds. It solves the user problem of overcoming writer's block and improving productivity by offering features such as rewriting sentences, fixing grammar and spelling, summarizing lengthy texts, translating in 25+ languages, and generating high-quality content for various purposes such as SEO-optimized blog posts, product descriptions, email copy, ad content, and social media copy. "
+
+    query = f"{startup_name} is a startup that works at {startup_stage} stage(s) in the {startup_industry} industry(s) that has such startup summary: {problems_solved}."
     funds = get_matched_fund_names(query)
-
-    if funds.startswith("Sorry, try again"):
-        print(funds)
-    else:
-        fund_names = funds.split(", ")
-        for fund_name in fund_names:
-            if fund_name.startswith("these are all the funds that are likely to invest in the startup"):
-                print(fund_name)
-            else:
-                raw_info = get_info_about_fund(fund_name, query)
-                info = refactor_output(raw_info)
-
-                print(info)
 
 
 if __name__ == '__main__':
