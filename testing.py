@@ -16,7 +16,7 @@ from refactor_output import refactor_output
 
 
 # Set OpenAI API key
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "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"
 
 # Access the API key and use it in API requests
 api_key = os.environ["OPENAI_API_KEY"]
@@ -27,29 +27,29 @@ openai.api_key = api_key
 
 def get_matched_fund_names(query):
     try:
-        # embeddings = OpenAIEmbeddings()
-        # docsearch = Chroma(persist_directory="chroma_save", embedding_function=embeddings)
-
-        loader = CSVLoader(file_path='./new_data.csv', encoding="utf-8", csv_args={
-            'delimiter': ',',
-            'fieldnames': [
-                'vc_name', 'vc_website_url', 'vc_linkedin_url', 'vc_investor_name',
-                'vc_investor_email', 'vc_stages', 'vc_industries',
-                'vc_portfolio_startup_name', 'vc_portfolio_startup_website_url',
-                'vc_portfolio_startup_solution'
-            ]
-        })
-
-        documents = loader.load()
-
-        text_splitter = CharacterTextSplitter(chunk_size=20000, chunk_overlap=0)
-        docs = text_splitter.split_documents(documents)
-
         embeddings = OpenAIEmbeddings()
-        docsearch = Chroma.from_documents(
-            documents=docs,
-            embedding=embeddings,
-        )
+        docsearch = Chroma(persist_directory="chroma_save", embedding_function=embeddings)
+
+        # loader = CSVLoader(file_path='csvs/new_data.csv', encoding="utf-8", csv_args={
+        #     'delimiter': ',',
+        #     'fieldnames': [
+        #         'vc_name', 'vc_website_url', 'vc_linkedin_url', 'vc_investor_name',
+        #         'vc_investor_email', 'vc_stages', 'vc_industries',
+        #         'vc_portfolio_startup_name', 'vc_portfolio_startup_website_url',
+        #         'vc_portfolio_startup_solution'
+        #     ]
+        # })
+        #
+        # documents = loader.load()
+        #
+        # text_splitter = CharacterTextSplitter(chunk_size=20000, chunk_overlap=0)
+        # docs = text_splitter.split_documents(documents)
+        #
+        # embeddings = OpenAIEmbeddings()
+        # docsearch = Chroma.from_documents(
+        #     documents=docs,
+        #     embedding=embeddings,
+        # )
 
         qa_chain = load_qa_chain(
             ChatOpenAI(

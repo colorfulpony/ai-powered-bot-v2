@@ -16,3 +16,8 @@ gspread~=5.9.0
 tabulate
 
 aiohttp~=3.8.4
+PyYAML~=6.0
+fuzzywuzzy~=0.18.0
+Flask~=2.3.2
+streamlit~=1.23.1
+tldextract~=3.4.4

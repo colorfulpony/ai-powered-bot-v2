@@ -17,7 +17,7 @@ import time
 import random
 
 # Set OpenAI API key
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "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"
 
 # Access the API key and use it in API requests
 api_key = os.environ["OPENAI_API_KEY"]
@@ -71,26 +71,8 @@ def retry_with_exponential_backoff(
 @retry_with_exponential_backoff
 def get_matched_fund_names(query):
     try:
-        loader = CSVLoader(file_path='./new_data.csv', encoding="utf-8", csv_args={
-            'delimiter': ',',
-            'fieldnames': [
-                'vc_name', 'vc_website_url', 'vc_linkedin_url', 'vc_investor_name',
-                'vc_investor_email', 'vc_stages', 'vc_industries',
-                'vc_portfolio_startup_name', 'vc_portfolio_startup_website_url',
-                'vc_portfolio_startup_solution'
-            ]
-        })
-
-        documents = loader.load()
-
-        text_splitter = CharacterTextSplitter(chunk_size=20000, chunk_overlap=0)
-        docs = text_splitter.split_documents(documents)
-
         embeddings = OpenAIEmbeddings()
-        docsearch = Chroma.from_documents(
-            documents=docs,
-            embedding=embeddings,
-        )
+        docsearch = Chroma(persist_directory="chroma_save", embedding_function=embeddings)
 
         chain_type_kwargs = {"prompt": MATCHED_VC_NAMES_PROMPT_v6}
 
@@ -138,7 +120,7 @@ def main():
     # startup_stage = "Seed, Series A"
     # problems_solved = "Kol is a startup that provides a powerful AI assistant to help users create content in seconds. It solves the user problem of overcoming writer's block and improving productivity by offering features such as rewriting sentences, fixing grammar and spelling, summarizing lengthy texts, translating in 25+ languages, and generating high-quality content for various purposes such as SEO-optimized blog posts, product descriptions, email copy, ad content, and social media copy. "
 
-    query = f"{startup_name} is a startup that works at {startup_stage} stage(s) in the {startup_industry} industry(s) that has such startup summary: {problems_solved}."
+    query = f"{startup_name} is a startup that works at {startup_stage} stage(s) in the {startup_industry} industry(s). Startup description {problems_solved}."
     funds = get_matched_fund_names(query)
 
 

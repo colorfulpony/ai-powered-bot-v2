@@ -70,7 +70,7 @@ def retry_with_exponential_backoff(
 @retry_with_exponential_backoff
 def get_matched_fund_names(query):
     try:
-        loader = CSVLoader(file_path='./new_data.csv', csv_args={
+        loader = CSVLoader(file_path='csvs/new_data.csv', csv_args={
             'delimiter': ',',
             'fieldnames': [
                 'vc_name', 'vc_website_url', 'vc_linkedin_url', 'vc_investor_name',

@@ -1,6 +1,7 @@
 from langchain import PromptTemplate
 from langchain.output_parsers import CommaSeparatedListOutputParser, StructuredOutputParser
-from response_schemas import LAST_RESPONSE_RESPONSE_SCHEMA
+from response_schemas import LAST_RESPONSE_RESPONSE_SCHEMA, LAST_RESPONSE_WITH_STARTUPS_NAMES_RESPONSE_SCHEMA, \
+    LAST_RESPONSE_INDIVIDUAL_EMAIL
 
 output_parser = CommaSeparatedListOutputParser()
 format_instructions = output_parser.get_format_instructions()
@@ -15,7 +16,7 @@ INDUSTRIES_INPUT = INDUSTRIES_PROMPT.format(subject="industries")
 
 # stages
 STAGES_PROMPT = PromptTemplate(
-    template="You got information about an investment fund. Your task is to analyze the info and find or assume in which {subject} this fund invests or has invested in.\n If you aren't sure about the answer just write - 'I don't know'. \n{format_instructions}",
+    template="You have been given information about an investment fund. Your task is to analyze the information and find or assume what {subject} of startups this fund is investing in or has already invested in.\n Here is a list of all possible stages: Idea Stage, Pre-Seed Stage, Seed Stage, Series A Stage, Series B Stage, Series C Stage, Series D Stage, Series E Stage, Late Stage, IPO Stage.\n If you are not sure of the answer, just write 'I don't know'. \n{format_instructions}",
     input_variables=["subject"],
     partial_variables={"format_instructions": format_instructions}
 )
@@ -229,6 +230,12 @@ Given the context information and not prior knowledge, do task described in deta
 last_response_output_parser = StructuredOutputParser.from_response_schemas(LAST_RESPONSE_RESPONSE_SCHEMA)
 last_response_format_instructions = last_response_output_parser.get_format_instructions()
 
+last_response_with_startups_names_output_parser = StructuredOutputParser.from_response_schemas(LAST_RESPONSE_WITH_STARTUPS_NAMES_RESPONSE_SCHEMA)
+last_response_with_startups_names_format_instructions = last_response_with_startups_names_output_parser.get_format_instructions()
+
+last_response_individual_email_output_parser = StructuredOutputParser.from_response_schemas(LAST_RESPONSE_INDIVIDUAL_EMAIL)
+last_response_individual_email_format_instructions = last_response_individual_email_output_parser.get_format_instructions()
+
 # last response
 
 LAST_ANSWER_PROMPT = PromptTemplate(
@@ -245,6 +252,22 @@ CONTEXT:
 """,
     input_variables=["question", "context"],
     partial_variables={"format_instructions": last_response_format_instructions}
+)
+
+LAST_ANSWER_WITH_STARTUPS_NAMES_PROMPT = PromptTemplate(
+    template="""Based on the NAME OF CERTAIN FUND, USER'S STARTUP INFORMATION, SIMILAR STARTUPS FROM FUND'S PORTFOLIO and CONTEXT write answer based on the OUTPUT FORMAT INSTRUCTIONS
+All data in your response should be only from the information provided below. Don't make up any data. 
+
+{question}
+
+OUTPUT FORMAT INSTRUCTIONS:
+{format_instructions}
+
+CONTEXT:
+{context}
+""",
+    input_variables=["question", "context"],
+    partial_variables={"format_instructions": last_response_individual_email_format_instructions}
 )
 
 
@@ -829,7 +852,7 @@ STARTUP DESCRIPTION:
 ------
 How to determine whether a fund will invest in a startup?
 ------
-If venture capital fund has invested in startup(s) that works in a similar industry to the startup described below, then the fund will invest in the startup described below.
+If venture capital fund has invested in startup(s) that works in a similar industry or solve similar problem(this info you can find in `vc_portfolio_startup_solution`) to the industry in which startup described above works, then the fund will invest in the startup described above.
 Therefore, you can add name of this fund to your answer.
 ------
 
@@ -838,10 +861,77 @@ Important notes:
 ------
 Do not make up venture capital fund names
 Use only venture capital fund names from the context you were given before
-Names of funds you can find in the first column in the context called `vc_name`
+Names of funds you can find only in the context called `vc_name`
+Don't write fictitious fund names. If you can't find 5 funds, then after all the funds you found, just write "That's it"
+------
+
+------
+Output format:
+------
+{format_instructions}
 ------
 """,
     input_variables=["subject"],
+    partial_variables={"format_instructions": format_instructions}
 )
 
 
+
+
+
+TEST_PROMPT4 = PromptTemplate(
+    template="""
+------
+YOUR TASK:
+------
+Understand whether a venture fund will invest in the startup described below or not
+------
+
+------
+STARTUP DESCRIPTION:
+------
+{subject}
+------
+
+------
+How to determine whether a fund will invest in a startup?
+------
+If venture capital fund has invested in startup(s) that works in a similar industry or solve similar problem to the industry in which startup described above works, then the fund will invest in the startup described above.(you can find startup in wich fund has invested in `vc_portfolio`.
+Therefore, you can think of this fund as one that will invest in a startup described above. In this case, you only need to write the name of this fund and nothing else!
+
+If this fund has not invested in startup(s) that works in a similar industry or has not solve similar problem to the industry in which startup described above works, it will not invest in the startup. In this case, you need simply write "This fund is not suitable"
+------
+""",
+    input_variables=["subject"],
+    validate_template=False
+)
+
+
+
+
+
+TEST_PROMPT5 = PromptTemplate(
+    template="""
+Find out whether the fund (information about which you got from context) will invest in the startup described below or not. 
+
+------
+How to determine whether a fund will invest in a startup?
+------
+If the venture capital fund has invested in a startup(s) that operates in a similar industry or solves similar problems as the startup described below, then the fund will invest in the startup (you can find the startup in which the fund has invested in the `vc_portfolio`).
+------
+
+If you think that fund will invest into described below startup and this fund has startup(s) in their investment portfolio that works in similar industry or solve similar problem to startup described below, YOU MUST RETURN `Yes, similiar startups is: Startup Name 1, Startup Name 2...` where `Startup Name 1, Startup Name 2...` is the names of these startup(s) from their investment portfolio that works in similar industry or solve similar problem to startup described below.
+
+If you think that fund will invest into described below startup but this fund doesn't have startup(s) in their investment portfolio that works in similar industry or solve similar problem to startup described below, YOU MUST RETURN `Yes, but this fund doesn't have any similar startups in its portfolio`
+
+In any other way, please return "No"
+
+------
+Startup Description:
+------
+{subject}
+------
+""",
+    input_variables=["subject"],
+    validate_template=False
+)

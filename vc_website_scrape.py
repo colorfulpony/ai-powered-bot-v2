@@ -13,7 +13,7 @@ class Scraper:
         visited_urls = set()
         try:
             page = await browser.new_page()
-            page.set_default_navigation_timeout(20000)
+            page.set_default_navigation_timeout(40000)
             await page.set_extra_http_headers({"User-Agent": self.user_agent})
             text = await self.scrape_main(page, url, visited_urls)
             await page.close()

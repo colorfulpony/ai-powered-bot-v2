@@ -9,7 +9,7 @@ from clean_text_after_scrape import clean_text
 from vc_website_scrape import scrape_website
 from vc_website_portfolio_links import get_portfolio_links
 from get_gpt_response_via_text import gpt_info_via_text
-from get_gpt_response_via_text_for_portfolio_website_solution import gpt_info_via_text as gpt_portfolio_startup_solution
+from get_gpt_response_via_text_for_portfolio_startup import gpt_info_via_text as gpt_portfolio_startup_solution
 import questions as constants
 import prompts as INPUTS
 from insert_into_sheets_v2 import insert_data_into_google_sheets
@@ -31,19 +31,19 @@ async def get_info_about_vc(vc_name, url, browser) -> tuple:
 
             industries = industries_task.result()
             if industries.startswith("I don't know") or "does not provide" in industries or "without further information" in industries:
-                industries = "-"
+                industries = None
 
             stages = stages_task.result()
-            if stages.startswith("I don't know") or "does not provide" in stages  or "without further information" in stages:
-                stages = "-"
+            if stages.startswith("I don't know") or "does not provide" in stages or "without further information" in stages:
+                stages = None
 
             return industries, stages
         else:
-            return "-", "-"
+            return None, None
     except Exception as e:
         print(e)
         traceback.print_exc()
-        return "-", "-"
+        return None, None
 
 
 async def process_startup(portfolio_startup_link, browser):
@@ -55,13 +55,16 @@ async def process_startup(portfolio_startup_link, browser):
 
         domain_name = urlparse(portfolio_startup_link).netloc
         startup_name = domain_name.split('.')[0] if domain_name.count('.') == 1 else domain_name.split('.')[1]
-        # text_from_startup_website = f"Probable name of the startup is {startup_name}.\n{text_from_startup_website}"
         startup_solution = await gpt_portfolio_startup_solution(text_from_startup_website, constants.SOLUTION_QUESTION)
+        startup_industry = await gpt_portfolio_startup_solution(text_from_startup_website, constants.INDUSTRY_QUESTION)
 
         if any(keyword in startup_solution for keyword in ("I don't know", "This document does not", "context does not provide")):
-            return None
+            startup_solution = None
 
-        return startup_name, portfolio_startup_link, startup_solution
+        if any(keyword in startup_industry for keyword in ("I don't know", "This document does not", "context does not provide")):
+            startup_industry = None
+
+        return startup_name, portfolio_startup_link, startup_solution, startup_industry
     except Exception as e:
         print(e)
         traceback.print_exc()
@@ -85,20 +88,6 @@ async def get_info_about_vc_portfolio_startups(portfolio_url, browser=None):
         results = await asyncio.gather(*tasks)
         startups_result_info = [result for result in results if result is not None]
 
-        # # Check if the number of startups is less than 10 and there are additional links available
-        # while len(startups_result_info) < 10 and len(portfolio_startups_links) > len(tasks):
-        #     remaining_links = portfolio_startups_links[len(tasks):]
-        #     additional_tasks = []
-        #     for link in remaining_links:
-        #         task = asyncio.create_task(process_startup(link, browser))
-        #         additional_tasks.append(task)
-        #
-        #     additional_results = await asyncio.gather(*additional_tasks)
-        #     additional_startups_info = [result for result in additional_results if result is not None]
-        #     startups_result_info.extend(additional_startups_info)
-        #     tasks.extend(additional_tasks)
-
-        # return startups_result_info[:10]  # Return the first 10 startups (or fewer)
         return startups_result_info  # Return the first 10 startups (or fewer)
 
     except Exception as error:
@@ -113,10 +102,15 @@ async def process_vc_data(
     try:
         portfolio_startups = await get_info_about_vc_portfolio_startups(vc_portfolio_url, browser=browser)
 
-        if vc_stages == "/" or vc_stages == "" or vc_industries == "/" or vc_industries == "":
-            industries, stages = await get_info_about_vc(vc_name, vc_website_url, browser)
-            vc_industries = industries
-            vc_stages = stages
+        industries, stages = await get_info_about_vc(vc_name, vc_website_url, browser)
+        if industries is not None:
+            vc_industries = vc_industries + ", " + industries
+        if stages is not None:
+            vc_stages = vc_stages + ", " + stages
+
+        for portfolio_startup in portfolio_startups:
+            if portfolio_startup[3] is not None:
+                vc_industries = vc_industries + ", " + portfolio_startup[3]
 
         return vc_name, vc_website_url, vc_linkedin_url, analyst_name, analyst_email, vc_stages, vc_industries, portfolio_startups
     except Exception as e:
@@ -236,7 +230,7 @@ async def main(google_sheets_range):
                         print(f"Industries: {vc_industries}")
                         print("Portfolio Startups:")
                         if portfolio_startups:
-                            for startup_name, startup_url, startup_solution in portfolio_startups:
+                            for startup_name, startup_url, startup_solution, _ in portfolio_startups:
                                 print(f"    - Startup Name: {startup_name}")
                                 print(f"      Startup URL: {startup_url}")
                                 print(f"      Solution: {startup_solution}")
@@ -257,6 +251,7 @@ async def main(google_sheets_range):
 
 
 if __name__ == "__main__":
-    for i in range(288, 579):
+    for i in range(271, 577):
         print(i)
         asyncio.run(main(f'A{i}:H{i}'))
+    # asyncio.run(main("A2:H2"))

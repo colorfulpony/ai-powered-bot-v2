@@ -65,6 +65,41 @@ LAST_RESPONSE_RESPONSE_SCHEMA = [
     ),
     ResponseSchema(
         name="Individual email message",
-        description="Personalized email to the investment fund analyst. An email that a user can use to get an investment from this fund. One of the sentences should be about 1-2 startup(s) that this investment fund has invested in before (but only include those that solve very similar problems and are in quite similiar industry as the user's startup). Be sure to include the name of the startup(s) and website url of the startup(s) in which the investment fund has invested in the following format: StartupName(startupname.com), StartupName2(startupname2.com). Use the name of the startup and the link to the website only as given in the information"
+        description="""A personalized email to an investment fund analyst. An email that can be used by the user to get investments from the fund where this analyst works."""
+    )
+]
+
+
+LAST_RESPONSE_WITH_STARTUPS_NAMES_RESPONSE_SCHEMA = [
+    ResponseSchema(
+        name="Fund name",
+        description="Write name of the investment fund"
+    ),
+    ResponseSchema(
+        name="Fund website",
+        description="Write the website url of the investment fund"
+    ),
+    ResponseSchema(
+        name="Fund linkedIn",
+        description="Write the linkedin url of the investment fund if there is such. If there is no linkedIn url - just write '/'"
+    ),
+    ResponseSchema(
+        name="Analyst name",
+        description="Write name of the analyst of the investment fund"
+    ),
+    ResponseSchema(
+        name="Analyst email",
+        description="Write email of the analyst of the investment fund"
+    ),
+    ResponseSchema(
+        name="Individual email message",
+        description="""Write a paragraph that can inserted to an email to the analyst, the objective of this paragraph is to show that the investor has invested in a company that are similar to the  user’s startup. Therefore, write paragraph as follow: “I notice that you have invested in [insert the name and website url of the first startup that solve very similar problems] and [insert the name and website url of the second  startup that solve very similar problems] which are focus on [Insert the problem they are solving], seeing this I think we could be a great fit because, we [Insert problem that the user’s startup is solving]"""
+    )
+]
+
+LAST_RESPONSE_INDIVIDUAL_EMAIL = [
+    ResponseSchema(
+        name="Individual email message",
+        description="""Write a paragraph that can inserted to an email to the analyst, the objective of this paragraph is to show that the investor has invested in a company that are similar to the  user’s startup. Therefore, write paragraph as follow: “I notice that you have invested in [insert the name and website url of the first startup that solve very similar problems] and [insert the name and website url of the second  startup that solve very similar problems] which are focus on [Insert the problem they are solving], seeing this I think we could be a great fit because, we [Insert problem that the user’s startup is solving]"""
     )
 ]

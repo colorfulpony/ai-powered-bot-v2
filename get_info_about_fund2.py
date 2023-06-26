@@ -1,10 +1,12 @@
 import traceback
 
+from langchain import FAISS
 from langchain.document_loaders import CSVLoader
 from langchain.embeddings.openai import OpenAIEmbeddings
+from langchain.schema import Document
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores import Chroma
-from prompts import LAST_ANSWER_PROMPT
+from prompts import LAST_ANSWER_PROMPT, LAST_ANSWER_WITH_STARTUPS_NAMES_PROMPT
 from langchain.chains import RetrievalQA
 from langchain.chat_models import ChatOpenAI
 import openai
@@ -57,54 +59,50 @@ def retry_with_exponential_backoff(
 
 
 @retry_with_exponential_backoff
-def get_info_about_fund(fund_name, startup_info):
+def get_info_about_fund(fund_name, startup_info, data, similar_startups=None):
     try:
-        # embeddings = OpenAIEmbeddings()
-        # docsearch = Chroma(persist_directory="chroma_save", embedding_function=embeddings)
 
-        loader = CSVLoader(file_path='test.csv', encoding="utf-8", csv_args={
-            'delimiter': ',',
-            'fieldnames': [
-                'vc_name', 'vc_website_url', 'vc_linkedin_url', 'vc_investor_name',
-                'vc_investor_email', 'vc_stages', 'vc_industries',
-                'vc_portfolio_startup_name', 'vc_portfolio_startup_website_url',
-                'vc_portfolio_startup_solution'
-            ]
-        })
+        # Convert the data into a string representation
+        data_str = ""
+        for key, value in data.items():
+            if isinstance(value, list):
+                for item in value:
+                    data_str += f"{key}: {item}\n"
+            else:
+                data_str += f"{key}: {value}\n"
 
-        documents = loader.load()
+        # Create a Document object
+        doc = Document(page_content=data_str)
 
-        text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
-        docs = text_splitter.split_documents(documents)
+        # Use the document with load_qa_chain
+        docs = [doc]
 
         embeddings = OpenAIEmbeddings()
-        docsearch = Chroma.from_documents(
-            documents=documents,
-            embedding=embeddings,
-        )
+        docsearch = FAISS.from_documents(docs, embeddings)
 
         # Create the question answering model
         llm = ChatOpenAI(
             model_name="gpt-3.5-turbo-16k",
             temperature=0
         )
-        qa = RetrievalQA.from_llm(llm=llm, retriever=docsearch.as_retriever(), prompt=LAST_ANSWER_PROMPT)
 
-        query = f"""NAME OF CERTAIN FUND:
-    {fund_name}
-    
-    USER'S STARTUP INFORMATION:
-    {startup_info}"""
+        if similar_startups:
+            query = f"""NAME OF CERTAIN FUND:
+            {fund_name}
 
-        # Ask a question and get an answer
-        answer = qa.run(query=query)
-        return answer
+            USER'S STARTUP INFORMATION:
+            {startup_info}
+
+            SIMILAR STARTUPS FROM FUND'S PORTFOLIO:
+            {similar_startups}"""
+            qa = RetrievalQA.from_llm(llm=llm, retriever=docsearch.as_retriever(), prompt=LAST_ANSWER_WITH_STARTUPS_NAMES_PROMPT)
+
+            # Ask a question and get an answer
+            answer = qa.run(query=query)
+            return answer
+        else:
+            return None
     except Exception as e:
         print(e)
         traceback.print_exc()
         return None
-
-
-
-if __name__ == '__main__':
-    get_info_about_fund()

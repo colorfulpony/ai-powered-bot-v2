@@ -22,7 +22,7 @@ async def scrap_portfolio_website(url: str, browser) -> str:
 
     try:
         page = await browser.new_page()
-        page.set_default_navigation_timeout(20000)
+        page.set_default_navigation_timeout(40000)
         await page.set_extra_http_headers({"User-Agent": user_agent})
 
         # status_code = await get_status_code(url)

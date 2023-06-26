@@ -11,11 +11,11 @@ from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores import Chroma
 
 from get_info_about_fund import get_info_about_fund
-from prompts import TEST_PROMPT2, DEFAULT_TEXT_QA_PROMPT_V4, DEFAULT_REFINE_PROMPT_V4
+from prompts import TEST_PROMPT2, DEFAULT_TEXT_QA_PROMPT_V6, DEFAULT_REFINE_PROMPT_V6
 from refactor_output import refactor_output
 
 # Set OpenAI API key
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "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"
 
 # Access the API key and use it in API requests
 api_key = os.environ["OPENAI_API_KEY"]
@@ -24,30 +24,12 @@ openai.api_key = api_key
 
 def get_matched_fund_names(query):
     try:
-        loader = CSVLoader(file_path='./new_data.csv', encoding="utf-8", csv_args={
-            'delimiter': ',',
-            'fieldnames': [
-                'vc_name', 'vc_website_url', 'vc_linkedin_url', 'vc_investor_name',
-                'vc_investor_email', 'vc_stages', 'vc_industries',
-                'vc_portfolio_startup_name', 'vc_portfolio_startup_website_url',
-                'vc_portfolio_startup_solution'
-            ]
-        })
-
-        documents = loader.load()
-
-        text_splitter = CharacterTextSplitter(chunk_size=20000, chunk_overlap=0)
-        docs = text_splitter.split_documents(documents)
-
         embeddings = OpenAIEmbeddings()
-        docsearch = Chroma.from_documents(
-            documents=docs,
-            embedding=embeddings,
-        )
+        docsearch = Chroma(persist_directory="chroma_save", embedding_function=embeddings)
 
         chain_type_kwargs = {
-            "refine_prompt":  DEFAULT_REFINE_PROMPT_V4,
-            "question_prompt": DEFAULT_TEXT_QA_PROMPT_V4
+            "refine_prompt":  DEFAULT_REFINE_PROMPT_V6,
+            "question_prompt": DEFAULT_TEXT_QA_PROMPT_V6
         }
 
         chain = RetrievalQA.from_chain_type(
@@ -61,7 +43,7 @@ def get_matched_fund_names(query):
             chain_type_kwargs=chain_type_kwargs
         )
 
-        result = chain({"question": "Tell me all you know about swipez startup. What is the fund that had invested in this startup."})
+        result = chain({"question": query})
         print(result["result"])
         return result["result"]
     except Exception as e:
@@ -83,15 +65,15 @@ def main():
     # startup_stage = "Seed"
     # problems_solved = "It produces pills for third party countries"
 
-    # startup_name = "Juko"
-    # startup_industry = "Finance, automation, money"
-    # startup_stage = "Seed, early-stage, and Series A"
-    # problems_solved = "It solves the user problem of automating key areas of business operations such as invoicing, payment collections, bulk payouts, GST filing, and customer data management."
+    startup_name = "Juko"
+    startup_industry = "Finance, automation, money"
+    startup_stage = "Seed, early-stage, and Series A"
+    problems_solved = "It solves the user problem of automating key areas of business operations such as invoicing, payment collections, bulk payouts, GST filing, and customer data management."
 
-    startup_name = "SIRPLUS"
-    startup_industry = "B2C, Ecommerce, Climate Tech"
-    startup_stage = "Seed"
-    problems_solved = "It helps consumer to buy let over food from store at an attractive price to help reduce foodwaste and save the planet"
+    # startup_name = "SIRPLUS"
+    # startup_industry = "B2C, Ecommerce, Climate Tech"
+    # startup_stage = "Seed"
+    # problems_solved = "It helps consumer to buy let over food from store at an attractive price to help reduce foodwaste and save the planet"
 
     query = f"{startup_name} is a startup that works at {startup_stage} stage in the {startup_industry} industry. {startup_name} startup summary: {problems_solved}."
     funds = get_matched_fund_names(query)
