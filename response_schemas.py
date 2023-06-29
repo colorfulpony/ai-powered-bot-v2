@@ -100,6 +100,8 @@ LAST_RESPONSE_WITH_STARTUPS_NAMES_RESPONSE_SCHEMA = [
 LAST_RESPONSE_INDIVIDUAL_EMAIL = [
     ResponseSchema(
         name="Individual email message",
-        description="""Write a paragraph that can inserted to an email to the analyst, the objective of this paragraph is to show that the investor has invested in a company that are similar to the  user’s startup. Therefore, write paragraph as follow: “I notice that you have invested in [insert the name and website url of the first startup that solve very similar problems] and [insert the name and website url of the second  startup that solve very similar problems] which are focus on [Insert the problem they are solving], seeing this I think we could be a great fit because, we [Insert problem that the user’s startup is solving]"""
+        description="""Write a paragraph that can inserted to an email to the analyst, the objective of this paragraph is to show that the investor has invested in a company that are similar to the  user’s startup. Therefore, write paragraph as follow: “I notice that you have invested in [insert the name and website url of the first startup that solve very similar problems] and [insert the name and website url of the second  startup that solve very similar problems] which are focus on [Insert the problem they are solving], seeing this I think we could be a great fit because, we [Insert problem that the user’s startup is solving]
+        
+If you think that the information you have is not enough to form an answer, just write `I don't know`"""
     )
 ]

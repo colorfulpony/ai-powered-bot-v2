@@ -1,7 +1,7 @@
 import json
 
 # Read JSON from file
-with open('json/test.json', 'r') as json_file:
+with open('json/main.json', 'r') as json_file:
     data = json.load(json_file)
 
 # Function to get fund information by vc_id

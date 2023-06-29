@@ -35,3 +35,5 @@ async def gpt_info_via_text(text, question):
         traceback.print_exc()
         return ""
 
+if __name__ == '__main__':
+    test = gpt_info_via_text()

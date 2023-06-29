@@ -239,7 +239,7 @@ last_response_individual_email_format_instructions = last_response_individual_em
 # last response
 
 LAST_ANSWER_PROMPT = PromptTemplate(
-    template="""Based on the NAME OF CERTAIN FUND, USER'S STARTUP INFORMATION and CONTEXT write answer based on the OUTPUT FORMAT INSTRUCTIONS
+    template="""Base your answer on the USER'S STARTUP INFORMATION and CONTEXT
 All data in your response should be only from the information provided below. Don't make up any data. 
 
 {question}
@@ -255,13 +255,16 @@ CONTEXT:
 )
 
 LAST_ANSWER_WITH_STARTUPS_NAMES_PROMPT = PromptTemplate(
-    template="""Based on the NAME OF CERTAIN FUND, USER'S STARTUP INFORMATION, SIMILAR STARTUPS FROM FUND'S PORTFOLIO and CONTEXT write answer based on the OUTPUT FORMAT INSTRUCTIONS
+    template="""Below you got information about user's startup and information about investment fund.
+Based on provided below information, write answer based on the OUTPUT FORMAT INSTRUCTIONS
 All data in your response should be only from the information provided below. Don't make up any data. 
 
 {question}
 
 OUTPUT FORMAT INSTRUCTIONS:
 {format_instructions}
+
+If you think that there is no needed information for answer - just write "I don't know"
 
 CONTEXT:
 {context}
@@ -910,21 +913,19 @@ If this fund has not invested in startup(s) that works in a similar industry or 
 
 
 
-TEST_PROMPT5 = PromptTemplate(
+CHECK_IF_FUND_WILL_INVEST_IN_USER_STARTUP_PROMPT = PromptTemplate(
     template="""
 Find out whether the fund (information about which you got from context) will invest in the startup described below or not. 
+To answer, use only the data that was provided to you earlier, and not any other data
 
 ------
 How to determine whether a fund will invest in a startup?
 ------
-If the venture capital fund has invested in a startup(s) that operates in a similar industry or solves similar problems as the startup described below, then the fund will invest in the startup (you can find the startup in which the fund has invested in the `vc_portfolio`).
+If the venture capital fund has invested in a startup(s) that operates in a similar industry or solves similar problems to the startup described below, then the fund will invest in the startup (you can find the startup in which the fund has invested in the `vc_portfolio`).
 ------
 
-If you think that fund will invest into described below startup and this fund has startup(s) in their investment portfolio that works in similar industry or solve similar problem to startup described below, YOU MUST RETURN `Yes, similiar startups is: Startup Name 1, Startup Name 2...` where `Startup Name 1, Startup Name 2...` is the names of these startup(s) from their investment portfolio that works in similar industry or solve similar problem to startup described below.
-
-If you think that fund will invest into described below startup but this fund doesn't have startup(s) in their investment portfolio that works in similar industry or solve similar problem to startup described below, YOU MUST RETURN `Yes, but this fund doesn't have any similar startups in its portfolio`
-
-In any other way, please return "No"
+If you think that the fund has in its investment portfolio startup(s) that operate in a similar industry or solve a similar problem to the startup described below, YOU MUST ANSWER `Yes`.
+In any other way, please return just "No"
 
 ------
 Startup Description:

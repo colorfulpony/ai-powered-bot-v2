@@ -45,10 +45,10 @@ def get_matched_fund_names(query):
         # text_splitter = CharacterTextSplitter(chunk_size=20000, chunk_overlap=0)
         # docs = text_splitter.split_documents(documents)
         #
-        # embeddings = OpenAIEmbeddings()
+        # industry_embeddings = OpenAIEmbeddings()
         # docsearch = Chroma.from_documents(
         #     documents=docs,
-        #     embedding=embeddings,
+        #     embedding=industry_embeddings,
         # )
 
         qa_chain = load_qa_chain(

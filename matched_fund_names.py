@@ -88,8 +88,8 @@ def get_matched_fund_names(query):
         embeddings = OpenAIEmbeddings()
         docsearch = Chroma.from_documents(documents=docs, embedding=embeddings, persist_directory="test_chroma_save")
 
-        # embeddings = OpenAIEmbeddings()
-        # docsearch = Chroma(persist_directory="chroma_save", embedding_function=embeddings)
+        # industry_embeddings = OpenAIEmbeddings()
+        # docsearch = Chroma(persist_directory="chroma_save", embedding_function=industry_embeddings)
 
         # Create the question answering model
         llm = ChatOpenAI(

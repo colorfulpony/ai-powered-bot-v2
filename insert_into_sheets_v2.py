@@ -7,7 +7,7 @@ async def insert_data_into_google_sheets(data):
         # Connection To Worksheet
         gc = gspread.service_account('secrets.json')
         spreadsheet = gc.open('Structured data')
-        worksheet = spreadsheet.worksheet('Structured data')
+        worksheet = spreadsheet.worksheet('Copy of Structured data')
 
         last_row_index = len(worksheet.get_all_values()) + 1
 

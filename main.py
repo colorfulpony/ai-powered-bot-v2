@@ -196,7 +196,7 @@ async def main(google_sheets_range):
                 continue
             else:
                 async with async_playwright() as p:
-                    num_browsers = 5  # Number of browser instances to launch
+                    num_browsers = 3  # Number of browser instances to launch
                     browsers = await asyncio.gather(*[p.chromium.launch(headless=True) for _ in range(num_browsers)])
                     browser_pool = asyncio.Queue()
                     for browser in browsers:
@@ -251,7 +251,6 @@ async def main(google_sheets_range):
 
 
 if __name__ == "__main__":
-    for i in range(271, 577):
+    for i in range(2, 20):
         print(i)
         asyncio.run(main(f'A{i}:H{i}'))
-    # asyncio.run(main("A2:H2"))
