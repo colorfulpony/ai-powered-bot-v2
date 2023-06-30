@@ -1,12 +1,9 @@
 import traceback
 
 from langchain import FAISS
-from langchain.document_loaders import CSVLoader
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.schema import Document
-from langchain.text_splitter import CharacterTextSplitter
-from langchain.vectorstores import Chroma
-from prompts import LAST_ANSWER_PROMPT, LAST_ANSWER_WITH_STARTUPS_NAMES_PROMPT
+from constants.prompts import LAST_ANSWER
 from langchain.chains import RetrievalQA
 from langchain.chat_models import ChatOpenAI
 import openai
@@ -60,8 +57,17 @@ def retry_with_exponential_backoff(
 
 @retry_with_exponential_backoff
 def get_info_about_fund(startup_info, data):
-    try:
+    """
+    Get information about a fund based on startup information.
 
+    Parameters:
+        startup_info (str): Information about the startup.
+        data (dict): Data containing information about the fund.
+
+    Returns:
+        str: The answer provided by the model if successful, or None if an error occurs.
+    """
+    try:
         # Convert the data into a string representation
         data_str = ""
         for key, value in data.items():
@@ -77,7 +83,10 @@ def get_info_about_fund(startup_info, data):
         # Use the document with load_qa_chain
         docs = [doc]
 
+        # Create OpenAI embeddings
         embeddings = OpenAIEmbeddings()
+
+        # Create a FAISS vector store from the documents
         docsearch = FAISS.from_documents(docs, embeddings)
 
         # Create the question answering model
@@ -86,12 +95,12 @@ def get_info_about_fund(startup_info, data):
             temperature=0
         )
 
-        query = f"""USER'S STARTUP INFORMATION:
-{startup_info}"""
-        qa = RetrievalQA.from_llm(llm=llm, retriever=docsearch.as_retriever(), prompt=LAST_ANSWER_WITH_STARTUPS_NAMES_PROMPT)
+        # Create a retrieval-based QA model
+        qa = RetrievalQA.from_llm(llm=llm, retriever=docsearch.as_retriever(),
+                                  prompt=LAST_ANSWER)
 
         # Ask a question and get an answer
-        answer = qa.run(query=query)
+        answer = qa.run(query=startup_info)
         return answer
     except Exception as e:
         print(e)
