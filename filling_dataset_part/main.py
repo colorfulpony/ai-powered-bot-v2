@@ -128,7 +128,7 @@ async def get_info_about_vc_portfolio_startups(portfolio_url, browser=None):
         print(f'Full exec startup links: {end_startup_links - start_startup_links}')
 
         tasks = []
-        for link in portfolio_startups_links:
+        for link in portfolio_startups_links[:10]:
             task = asyncio.create_task(process_startup(link, browser))
             tasks.append(task)
 
@@ -373,6 +373,6 @@ async def main(google_sheets_range):
 
 
 if __name__ == "__main__":
-    for i in range(401, 402):
+    for i in range(1941, 2000):
         print(i)
         asyncio.run(main(f'A{i}:H{i}'))
